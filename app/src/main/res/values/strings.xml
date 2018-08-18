@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">ursal</string>
     <string name="play_ursal">song ursal</string>
+    <string name="title_activity_tela_login">TelaLogin</string>
+    <string name="texto_parabens"> Parabéns! Você acaba de dar o primeiro passo ao caminho da revolução!</string>
+    <string name="juntar_ursal">Junte-se ao Grande Plano Ursal, se aliste, precisaremos que estejas prontx para lutar pela nova União da República Socialista Latino Americana.</string>
+    <string name="final_parte2">Apenas precisamos que responda um curto questionário para melhor definir seu papel no momento em que o plano for executado.</string>
 
 </resources>
