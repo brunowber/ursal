@@ -1,9 +1,34 @@
 <resources>
-    <string name="app_name">ursal</string>
+    <string name="app_name">Ursal</string>
     <string name="play_ursal">song ursal</string>
     <string name="title_activity_tela_login">TelaLogin</string>
     <string name="texto_parabens"> Parabéns! Você acaba de dar o primeiro passo ao caminho da revolução!</string>
     <string name="juntar_ursal">Junte-se ao Grande Plano Ursal, se aliste, precisaremos que estejas prontx para lutar pela nova União da República Socialista Latino Americana.</string>
     <string name="final_parte2">Apenas precisamos que responda um curto questionário para melhor definir seu papel no momento em que o plano for executado.</string>
+
+    <string name="title_activity_questionario">Questionário Ursal</string>
+    <string name="perguntas">Responde o Questionário a seguir para saber seu papel:</string>
+
+    <string name="pergunta1">1: Qual Destas figuras Históricas é Sua Favorita?</string>
+    <string name="stalin">Stalin</string>
+    <string name="karl">Karl Marx</string>
+    <string name="lenin">lenin</string>
+    <string name="maria">Maria Do Rosário</string>
+
+    <string name="pergunta2"></string>
+    <string name="pergunta3"></string>
+    <string name="pergunta4"></string>
+    <string name="pergunta5"></string>
+    <string name="pergunta6"></string>
+    <string name="pergunta7"></string>
+    <string name="pergunta8"></string>
+    <string name="pergunta9"></string>
+    <string name="pergunta10"></string>
+    <string name="pergunta11"></string>
+    <string name="pergunta12"></string>
+    <string name="pergunta13"></string>
+
+
+    <string name="action_settings">Settings</string>
 
 </resources>
