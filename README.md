@@ -1,2 +1,2 @@
 # ursal
-Repositorio para criação do aplicativo Ursal
+Repositorio para criação do aplicativo Ursal, vamos dominar a américa
