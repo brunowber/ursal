@@ -6,276 +6,494 @@
     android:layout_height="match_parent"
     tools:context=".QuestionarioActivity">
 
-    <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-    <LinearLayout
-        android:layout_width="294dp"
-        android:layout_height="641dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="8dp">
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="85dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="46dp"
-            android:text="@string/perguntas"
-            tools:layout_editor_absoluteX="56dp"
-            tools:layout_editor_absoluteY="16dp" />
+        <LinearLayout
+            android:layout_width="294dp"
+            android:layout_height="641dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="8dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pergunta2"
-            tools:layout_editor_absoluteX="56dp"
-            tools:layout_editor_absoluteY="16dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:text="@string/perguntas"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="16dp" />
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <RadioButton
-                android:layout_width="322dp"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/stalin" />
+                android:text="@string/pergunta1"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="16dp" />
 
-            <RadioButton
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/karl" />
+                android:layout_height="139dp">
 
-            <RadioButton
+                <RadioButton
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/maconha" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/aborto" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/penal" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/medicos" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pergunta2"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/lenin" />
+                android:layout_height="wrap_content">
 
-            <RadioButton
+                <RadioButton
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/stalin" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/karl" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lenin" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/maria" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pergunta3"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/maria" />
-        </RadioGroup>
+                android:layout_height="107dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pergunta3"
-            tools:layout_editor_absoluteX="56dp"
-            tools:layout_editor_absoluteY="16dp" />
+                <RadioButton
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lula" />
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="107dp">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/che" />
 
-            <RadioButton
-                android:layout_width="322dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/stalin" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/marx" />
 
-            <RadioButton
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/xuxa" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="@string/pergunta4"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/karl" />
+                android:layout_height="107dp">
 
-            <RadioButton
+                <RadioButton
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/geraldo" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/caetano" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/borel" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/vittar" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pergunta5"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/lenin" />
+                android:layout_height="107dp">
 
-            <RadioButton
+                <RadioButton
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/doze" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dez" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/oito" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/seis" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pergunta6"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <RadioGroup
                 android:layout_width="match_parent"
+                android:layout_height="107dp">
+
+                <RadioButton
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/trafico" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/brainstorm" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/brainstorm" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/direitos" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/maria" />
-        </RadioGroup>
+                android:text="@string/pergunta7"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="16dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pergunta1"
-            tools:layout_editor_absoluteX="56dp"
-            tools:layout_editor_absoluteY="16dp" />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="107dp">
-
-            <RadioButton
-                android:layout_width="322dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/stalin" />
-
-            <RadioButton
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/karl" />
+                android:layout_height="140dp">
 
-            <RadioButton
+                <RadioButton
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/paz" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/gay" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nenhuma" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/foice" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pergunta8"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/lenin" />
+                android:layout_height="197dp">
 
-            <RadioButton
+                <RadioButton
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/gigante" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/machistas" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/hetero" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/operaria" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pergunta9"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <RadioGroup
                 android:layout_width="match_parent"
+                android:layout_height="156dp">
+
+                <RadioButton
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/crime" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/crencas" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/orgulho" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/vegano" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/maria" />
-        </RadioGroup>
+                android:text="@string/pergunta10"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="16dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pergunta4"
-            tools:layout_editor_absoluteX="56dp"
-            tools:layout_editor_absoluteY="16dp" />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="107dp">
-
-            <RadioButton
-                android:layout_width="322dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/stalin" />
-
-            <RadioButton
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/karl" />
+                android:layout_height="154dp">
 
-            <RadioButton
+                <RadioButton
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/divida" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/povos" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/patria" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/impor" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pergunta11"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/lenin" />
+                android:layout_height="107dp">
 
-            <RadioButton
+                <RadioButton
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/psicologica" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/reorientacao" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/prisao" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/expulsao" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pergunta12"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <RadioGroup
                 android:layout_width="match_parent"
+                android:layout_height="107dp">
+
+                <RadioButton
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/capistalista" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cristao" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cientologia" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/daciolo" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/maria" />
-        </RadioGroup>
+                android:text="@string/pergunta13"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="16dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pergunta1"
-            tools:layout_editor_absoluteX="56dp"
-            tools:layout_editor_absoluteY="16dp" />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="107dp">
-
-            <RadioButton
-                android:layout_width="322dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/stalin" />
-
-            <RadioButton
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/karl" />
+                android:layout_height="107dp">
 
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/lenin" />
+                <RadioButton
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/comunismo" />
 
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/maria" />
-        </RadioGroup>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/comunismo" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pergunta5"
-            tools:layout_editor_absoluteX="56dp"
-            tools:layout_editor_absoluteY="16dp" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/comunismo" />
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="107dp">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/comunismo" />
+            </RadioGroup>
 
-            <RadioButton
-                android:layout_width="322dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/stalin" />
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/karl" />
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/lenin" />
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/maria" />
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pergunta1"
-            tools:layout_editor_absoluteX="56dp"
-            tools:layout_editor_absoluteY="16dp" />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="107dp">
-
-            <RadioButton
-                android:layout_width="322dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/stalin" />
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/karl" />
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/lenin" />
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/maria" />
-        </RadioGroup>
-
-    </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
