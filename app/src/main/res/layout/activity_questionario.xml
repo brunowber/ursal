@@ -494,6 +494,13 @@
                     android:text="@string/comunismo" />
             </RadioGroup>
 
+            <Button
+                android:id="@+id/btn_responder_questionario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar Questionário" />
+
+
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
