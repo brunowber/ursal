@@ -23,6 +23,11 @@
                 android:resource="@xml/provider_paths"/>
         </provider>
 
+        <provider
+            android:authorities="com.facebook.app.FacebookContentProvider{APP_ID}"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+
 
 
         <activity android:name=".MainActivity">

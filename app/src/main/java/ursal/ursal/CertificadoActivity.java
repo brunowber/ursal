@@ -26,10 +26,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.facebook.share.model.ShareLinkContent;
+import com.facebook.share.widget.ShareDialog;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.NotActiveException;
 import java.io.OutputStream;
 
 public class CertificadoActivity extends AppCompatActivity {
@@ -39,6 +43,9 @@ public class CertificadoActivity extends AppCompatActivity {
     Button btn_gerar_certificado_whatsapp;
     Button btn_gerar_certificado_facebook;
     Button btn_gerar_certificado_twitter;
+
+    Button btn_voltar;
+
     DataBaseHelper db;
 
     @Override
@@ -53,6 +60,16 @@ public class CertificadoActivity extends AppCompatActivity {
         btn_gerar_certificado_whatsapp = findViewById(R.id.btn_gerar_certificado_whatsapp);
         btn_gerar_certificado_facebook = findViewById(R.id.btn_gerar_certificado_facebook);
         btn_gerar_certificado_twitter = findViewById(R.id.btn_gerar_certificado_twitter);
+
+        btn_voltar = findViewById(R.id.btn_voltar_usuario);
+
+        btn_voltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent usuario = new Intent(getBaseContext(), TelaUsuarioActivity.class);
+                startActivity(usuario);
+            }
+        });
 
         btn_gerar_certificado_whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,18 +109,10 @@ public class CertificadoActivity extends AppCompatActivity {
     }
 
     public void shareFacebook(Uri bmpUri) {
-        Intent facebookIntent = new Intent();
-        facebookIntent.setAction(Intent.ACTION_SEND);
-        facebookIntent.setPackage("com.facebook");
-
-        facebookIntent.putExtra(Intent.EXTRA_STREAM, bmpUri);
-        facebookIntent.setType("image/*");
-        facebookIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-        facebookIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         try {
-            startActivity(facebookIntent);
-        } catch (android.content.ActivityNotFoundException ex) {
-            toast("Facebook não está instalado.");
+            throw  new NotActiveException();
+        } catch (NotActiveException e) {
+            e.printStackTrace();
         }
     }
 
