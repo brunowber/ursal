@@ -9,6 +9,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
@@ -53,10 +54,6 @@ public class CertificadoActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 shareWhatsApp();
-                // Paint paint = new Paint();
-               // paint.setColor(Color.BLACK);
-               // paint.setTextSize(10);
-               // canvas.drawText("Some Text here", 200, 200, paint);
             }
         });
     }
@@ -92,11 +89,22 @@ public class CertificadoActivity extends AppCompatActivity {
         File path = Environment.getExternalStorageDirectory();
         File dir = new File(path+"/save/");
         dir.mkdir();
+
+        Bitmap mutableBitmap = bm.copy(Bitmap.Config.ARGB_8888, true);
+
+        canvas = new Canvas(mutableBitmap);
+        Paint paint = new Paint();
+        paint.setColor(Color.BLACK);
+        paint.setTextSize(45);
+        paint.setTypeface(Typeface.create("Arial", Typeface.ITALIC));
+        canvas.drawText("Bruno Weber", 500, 465, paint);
+        canvas.drawText("Comunista do Mal", 240, 540, paint);
+
         File file =  new File(getExternalFilesDir(Environment.DIRECTORY_PICTURES), "certificado.png");
         OutputStream out;
         try{
             out = new FileOutputStream(file);
-            bm.compress(Bitmap.CompressFormat.PNG,100,out);
+            mutableBitmap.compress(Bitmap.CompressFormat.PNG,100,out);
             out.flush();
             out.close();
         } catch (FileNotFoundException e) {
