@@ -2,17 +2,18 @@ package ursal.ursal;
 
 import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
+import android.icu.text.SimpleDateFormat;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.Calendar;
-import java.util.Currency;
+import java.util.Date;
 
 import model.Usuario;
 
@@ -50,6 +51,7 @@ public class TelaUsuarioActivity extends AppCompatActivity {
         toast.show();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public void criarUsuario(){
         String nomeF = nome.getText().toString();
         String guerrilheiroF = guerrilheiro.getText().toString();
@@ -61,10 +63,15 @@ public class TelaUsuarioActivity extends AppCompatActivity {
             toast("Você não escreveu seu codinome de guerrilheiro!");
             return;
         }
+
+        Date date = Calendar.getInstance().getTime();
+
+        SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
+
         user.setNome(nomeF);
         user.setGuerrilheiro(guerrilheiroF);
-        user.setEntrou(Calendar.getInstance().getTime());
-        boolean isInserted = db.insertData(user.getNome(), user.getGuerrilheiro(), user.getEntrou().toString());
+        user.setEntrou(format.format(date));
+        boolean isInserted = db.insertData(user.getNome(), user.getGuerrilheiro(), user.getEntrou());
         if(isInserted) {
             Intent i = new Intent(getBaseContext(), CertificadoActivity.class);
             startActivity(i);

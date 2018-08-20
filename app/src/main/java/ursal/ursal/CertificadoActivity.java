@@ -11,11 +11,12 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
@@ -138,6 +139,9 @@ public class CertificadoActivity extends AppCompatActivity {
         StringBuffer bufferN = getData(name);
         StringBuffer bufferG = getData(guerrilheiro);
         StringBuffer bufferD = getData(data);
+
+
+
         canvas.drawText("" + bufferN, 500, 465, paint);
         canvas.drawText("" + bufferG, 240, 545, paint);
         canvas.drawText("" + bufferD, 130, 955, paint);
