@@ -21,16 +21,32 @@
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp" />
 
-        <Button
-            android:id="@+id/btn_gerar_certificado"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/certificado" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/img_certificado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/certificado_final_png" />
+            <Button
+                android:id="@+id/btn_gerar_certificado_whatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/certificado_whats" />
+
+            <Button
+                android:id="@+id/btn_gerar_certificado_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/certificado_face" />
+
+            <Button
+                android:id="@+id/btn_gerar_certificado_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/certificado_twitter" />
+        </LinearLayout>
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

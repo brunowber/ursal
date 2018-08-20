@@ -36,7 +36,9 @@ public class CertificadoActivity extends AppCompatActivity {
 
     Image image;
     Canvas canvas;
-    Button btn_gerar_certificado;
+    Button btn_gerar_certificado_whatsapp;
+    Button btn_gerar_certificado_facebook;
+    Button btn_gerar_certificado_twitter;
     DataBaseHelper db;
 
     @Override
@@ -48,40 +50,60 @@ public class CertificadoActivity extends AppCompatActivity {
 
         db = new DataBaseHelper(this);
 
-        btn_gerar_certificado = findViewById(R.id.btn_gerar_certificado);
+        btn_gerar_certificado_whatsapp = findViewById(R.id.btn_gerar_certificado_whatsapp);
+        btn_gerar_certificado_facebook = findViewById(R.id.btn_gerar_certificado_facebook);
+        btn_gerar_certificado_twitter = findViewById(R.id.btn_gerar_certificado_twitter);
 
-        btn_gerar_certificado.setOnClickListener(new View.OnClickListener() {
+        btn_gerar_certificado_whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 Uri bmpUri = FileProvider.getUriForFile(CertificadoActivity.this, BuildConfig.APPLICATION_ID + ".provider", createImageFile());
                 shareWhatsApp(bmpUri);
             }
         });
-    }
 
-    public void toast(String msg) {
-        Context context = getApplicationContext();
-        CharSequence text = msg;
-        int duration = Toast.LENGTH_LONG;
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+        btn_gerar_certificado_facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri bmpUri = FileProvider.getUriForFile(CertificadoActivity.this, BuildConfig.APPLICATION_ID + ".provider", createImageFile());
+                shareFacebook(bmpUri);
+            }
+        });
+
+        btn_gerar_certificado_twitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri bmpUri = FileProvider.getUriForFile(CertificadoActivity.this, BuildConfig.APPLICATION_ID + ".provider", createImageFile());
+                shareTwitter(bmpUri);
+            }
+        });
     }
 
     public void shareWhatsApp(Uri bmpUri) {
-        Intent whatsappIntent = new Intent();
-        whatsappIntent.setAction(Intent.ACTION_SEND);
-        whatsappIntent.setPackage("com.whatsapp");
+        String pacote = "com.whatsapp";
+        String app = "Whatsapp";
+        startIntent(pacote, app, bmpUri );
+    }
 
-        whatsappIntent.putExtra(Intent.EXTRA_STREAM, bmpUri);
-        whatsappIntent.setType("image/*");
-        whatsappIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-        whatsappIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    public void shareTwitter(Uri bmpUri) {
+        String pacote = "com.twitter.android";
+        String app = "Twitter";
+        startIntent(pacote, app, bmpUri );
+    }
+
+    public void shareFacebook(Uri bmpUri) {
+        Intent facebookIntent = new Intent();
+        facebookIntent.setAction(Intent.ACTION_SEND);
+        facebookIntent.setPackage("com.facebook");
+
+        facebookIntent.putExtra(Intent.EXTRA_STREAM, bmpUri);
+        facebookIntent.setType("image/*");
+        facebookIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        facebookIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         try {
-            startActivity(whatsappIntent);
+            startActivity(facebookIntent);
         } catch (android.content.ActivityNotFoundException ex) {
-            toast("Whatsapp não está instalado.");
+            toast("Facebook não está instalado.");
         }
     }
 
@@ -127,8 +149,31 @@ public class CertificadoActivity extends AppCompatActivity {
         StringBuffer buffer = new StringBuffer();
         while (data.moveToNext()) {
             buffer.append(data.getString(0));
-            Log.e("debug buffer", "" + buffer);
         }
         return buffer;
+    }
+
+    public void startIntent(String pacote, String app, Uri bmpUri){
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.setPackage(pacote);
+
+        intent.putExtra(Intent.EXTRA_STREAM, bmpUri);
+        intent.setType("image/*");
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        try {
+            startActivity(intent);
+        } catch (android.content.ActivityNotFoundException ex) {
+            toast(app+ " não está instalado.");
+        }
+    }
+
+    public void toast(String msg) {
+        Context context = getApplicationContext();
+        CharSequence text = msg;
+        int duration = Toast.LENGTH_LONG;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 }
