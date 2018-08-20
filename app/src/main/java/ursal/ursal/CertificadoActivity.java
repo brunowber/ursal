@@ -92,7 +92,7 @@ public class CertificadoActivity extends AppCompatActivity {
         File path = Environment.getExternalStorageDirectory();
         File dir = new File(path+"/save/");
         dir.mkdir();
-        File file =  new File(getExternalFilesDir(Environment.DIRECTORY_PICTURES), "share_image_" + System.currentTimeMillis() + ".png");
+        File file =  new File(getExternalFilesDir(Environment.DIRECTORY_PICTURES), "certificado.png");
         OutputStream out;
         try{
             out = new FileOutputStream(file);
