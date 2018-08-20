@@ -90,14 +90,15 @@ public class CertificadoActivity extends AppCompatActivity {
         File path = Environment.getExternalStorageDirectory();
         File dir = new File(path + "/save/");
         dir.mkdir();
-
         Bitmap mutableBitmap = bm.copy(Bitmap.Config.ARGB_8888, true);
+
 
         canvas = new Canvas(mutableBitmap);
         Paint paint = new Paint();
         paint.setColor(Color.BLACK);
         paint.setTextSize(45);
-        paint.setTypeface(Typeface.create("Deutsch-Gothic", Typeface.ITALIC));
+        Typeface tf =Typeface.createFromAsset(getAssets(),"fonts/Deutsch.ttf");
+        paint.setTypeface(Typeface.create(tf, Typeface.ITALIC));
 
         Cursor name = db.getUserName();
         Cursor guerrilheiro = db.getUserGuerrilheiro();
@@ -105,7 +106,7 @@ public class CertificadoActivity extends AppCompatActivity {
         StringBuffer bufferN = getData(name);
         StringBuffer bufferG = getData(guerrilheiro);
         canvas.drawText("" + bufferN, 500, 465, paint);
-        canvas.drawText("" + bufferG, 240, 540, paint);
+        canvas.drawText("" + bufferG, 240, 545, paint);
 
             File file = new File(getExternalFilesDir(Environment.DIRECTORY_PICTURES), "certificado.png");
             OutputStream out;
