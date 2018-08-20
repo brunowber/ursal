@@ -133,11 +133,14 @@ public class CertificadoActivity extends AppCompatActivity {
 
         Cursor name = db.getUserName();
         Cursor guerrilheiro = db.getUserGuerrilheiro();
+        Cursor data = db.getUserData();
 
         StringBuffer bufferN = getData(name);
         StringBuffer bufferG = getData(guerrilheiro);
+        StringBuffer bufferD = getData(data);
         canvas.drawText("" + bufferN, 500, 465, paint);
         canvas.drawText("" + bufferG, 240, 545, paint);
+        canvas.drawText("" + bufferD, 130, 955, paint);
 
             File file = new File(getExternalFilesDir(Environment.DIRECTORY_PICTURES), "certificado.png");
             OutputStream out;
