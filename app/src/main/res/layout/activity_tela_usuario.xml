@@ -28,7 +28,8 @@
             android:text=""
             android:hint="Nome:"
             tools:layout_editor_absoluteX="25dp"
-            tools:layout_editor_absoluteY="69dp" />
+            tools:layout_editor_absoluteY="69dp"
+            android:maxLength="20"/>
 
         <EditText
             android:id="@+id/edt_guerrilheiro"
@@ -39,7 +40,8 @@
             android:inputType="textPersonName"
             android:text=""
             tools:layout_editor_absoluteX="25dp"
-            tools:layout_editor_absoluteY="125dp" />
+            tools:layout_editor_absoluteY="125dp"
+            android:maxLength="20"/>
         <Button
             android:id="@+id/btn_enviar"
             android:layout_width="match_parent"
