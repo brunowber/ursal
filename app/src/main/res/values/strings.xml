@@ -18,7 +18,7 @@
     <string name="pergunta2">2-Qual Destas figuras Históricas é Sua Favorita?</string>
     <string name="stalin">Stalin</string>
     <string name="karl">Karl Marx</string>
-    <string name="lenin">lenin</string>
+    <string name="lenin">Lenin</string>
     <string name="maria">Maria Do Rosário</string>
 
     <string name="pergunta3">3-Qual seu Filme Favorito?</string>
@@ -85,6 +85,8 @@
     <string name="comunismo">Comunismo</string>
 
     <string name="tela_usuario">Antes de prosseguir precsamos saber seu nome e seu codinome guerrilheiro!</string>
+    <string name="tela_certificado">Todo o plano já está sendo orquestrado e logo lhe passaremos mais informações. \nEsteja Preparado, a mudança está próxima!</string>
+    <string name="certificado">Gerar Certificado</string>
 
 
     <string name="action_settings">Settings</string>

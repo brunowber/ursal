@@ -59,6 +59,8 @@ public class TelaUsuarioActivity extends AppCompatActivity {
         user.setNome(nomeF);
         user.setGuerrilheiro(guerrilheiroF);
         user.setEntrou(Calendar.getInstance().getTime());
+        Intent i = new Intent(getBaseContext(), CertificadoActivity.class);
+        startActivity(i);
     }
 
 

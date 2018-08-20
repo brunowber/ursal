@@ -233,7 +233,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/brainstorm" />
+                    android:text="@string/recreativo" />
 
                 <RadioButton
                     android:layout_width="match_parent"
