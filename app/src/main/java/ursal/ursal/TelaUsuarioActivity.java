@@ -37,6 +37,7 @@ public class TelaUsuarioActivity extends AppCompatActivity {
         btn_enviar = findViewById(R.id.btn_enviar);
 
         btn_enviar.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onClick(View v) {
                 criarUsuario();
