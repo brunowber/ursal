@@ -2,6 +2,7 @@ package ursal.ursal;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.Calendar;
+import java.util.Currency;
 
 import model.Usuario;
 
@@ -20,12 +22,15 @@ public class TelaUsuarioActivity extends AppCompatActivity {
     EditText nome;
     EditText guerrilheiro;
     Usuario user = new Usuario();
+    DataBaseHelper db;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_usuario);
 
+        db = new DataBaseHelper(this);
         nome = findViewById(R.id.edt_nome);
         guerrilheiro = findViewById(R.id.edt_guerrilheiro);
         btn_enviar = findViewById(R.id.btn_enviar);
@@ -59,8 +64,13 @@ public class TelaUsuarioActivity extends AppCompatActivity {
         user.setNome(nomeF);
         user.setGuerrilheiro(guerrilheiroF);
         user.setEntrou(Calendar.getInstance().getTime());
-        Intent i = new Intent(getBaseContext(), CertificadoActivity.class);
-        startActivity(i);
+        boolean isInserted = db.insertData(user.getNome(), user.getGuerrilheiro(), user.getEntrou().toString());
+        if(isInserted) {
+            Intent i = new Intent(getBaseContext(), CertificadoActivity.class);
+            startActivity(i);
+        }
+        else
+            toast("Falha ao gravar no banco");
     }
 
 
