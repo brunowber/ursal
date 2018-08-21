@@ -4,14 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bandeira_unao_sovietica"
+    >
 
-    <Button
-        android:id="@+id/button_ursal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="16dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Manter-se no sistema velho e desonesto"
+            android:textSize="10sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="72sp"
+            tools:layout_editor_absoluteY="134sp" />
+
+        <Button
+            android:id="@+id/button_ursal"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:text="Entrar para ursal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="42sp"
+            tools:layout_editor_absoluteY="205sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:layout_weight="0.1"
+            android:text="MUTAR"
+            android:textColor="#FFD700"
+            android:textSize="18sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="306sp"
+            tools:layout_editor_absoluteY="440sp"
+            android:layout_marginLeft="295sp"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.4"
+            android:text="ON"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="296sp"
+            tools:layout_editor_absoluteY="465sp"
+            android:layout_marginLeft="295sp"
+            />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
