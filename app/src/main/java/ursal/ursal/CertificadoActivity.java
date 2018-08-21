@@ -171,18 +171,21 @@ public class CertificadoActivity extends AppCompatActivity {
         StringBuffer bufferG = getData(guerrilheiro);
         StringBuffer bufferD = getData(data);
 
-        double xPos = (canvas.getWidth() / 2.25);
-        double yPos = ((canvas.getHeight() / 2.5)) ;
+        double xPos = (canvas.getWidth() / 3.1);
+        double yPos = ((canvas.getHeight() / 2.2)) ;
 
         Log.e("debug", ""+xPos);
         Log.e("debug", ""+yPos);
 
         canvas.drawText("" + bufferN, (float) xPos, (float) yPos, paint);
 
-        xPos = (canvas.getWidth() / 1.5);
-        yPos = ((canvas.getHeight() / 1.75)) ;
+        xPos = (canvas.getWidth() / 5.8);
+        yPos = ((canvas.getHeight() / 1.85)) ;
         canvas.drawText("" + bufferG,(float) xPos, (float) yPos, paint);
-        canvas.drawText("" + bufferD, 130, 955, paint);
+
+        xPos = (canvas.getWidth() / 8);
+        yPos = ((canvas.getHeight() / 1.1)) ;
+        canvas.drawText("" + bufferD, (float) xPos, (float) yPos, paint);
 
         return mutableBitmap;
     }
