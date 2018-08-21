@@ -159,7 +159,7 @@ public class CertificadoActivity extends AppCompatActivity {
         canvas = new Canvas(mutableBitmap);
         Paint paint = new Paint();
         paint.setColor(Color.BLACK);
-        paint.setTextSize(55);
+        paint.setTextSize(40);
         Typeface tf =Typeface.createFromAsset(getAssets(),"fonts/Deutsch.ttf");
         paint.setTypeface(Typeface.create(tf, Typeface.ITALIC));
 
@@ -183,8 +183,8 @@ public class CertificadoActivity extends AppCompatActivity {
         yPos = ((canvas.getHeight() / 1.85)) ;
         canvas.drawText("" + bufferG,(float) xPos, (float) yPos, paint);
 
-        xPos = (canvas.getWidth() / 8);
-        yPos = ((canvas.getHeight() / 1.1)) ;
+        xPos = (canvas.getWidth() / 8.4);
+        yPos = ((canvas.getHeight() / 1.08)) ;
         canvas.drawText("" + bufferD, (float) xPos, (float) yPos, paint);
 
         return mutableBitmap;
