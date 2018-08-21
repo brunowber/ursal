@@ -19,12 +19,13 @@
             android:layout_height="76dp"
             android:text="@string/tela_certificado"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
+            tools:layout_editor_absoluteY="16dp"
+            android:fontFamily="sans-serif-medium"/>
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="302dp"
             android:src="@drawable/certificado_final" />
 
         <Button
@@ -32,9 +33,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/button"
             android:text="@string/voltar"
             tools:layout_editor_absoluteX="18dp"
             tools:layout_editor_absoluteY="60dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
 
         <TableRow
             android:layout_width="match_parent"
@@ -46,21 +52,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/certificado_twitter" />
+                android:background="@drawable/twitter"/>
 
             <Button
                 android:id="@+id/btn_gerar_certificado_facebook"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/certificado_face" />
+                android:background="@drawable/facebook" />
 
             <Button
                 android:id="@+id/btn_gerar_certificado_whatsapp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/certificado_whats" />
+                android:background="@drawable/whatsapp" />
         </TableRow>
 
     </LinearLayout>

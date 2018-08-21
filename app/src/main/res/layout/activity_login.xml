@@ -17,38 +17,47 @@
 
         <TextView
             android:id="@+id/P"
-            android:layout_width="319dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/texto_parabens"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
+            tools:layout_editor_absoluteY="16dp"
+            android:fontFamily="sans-serif-medium"/>
 
         <TextView
             android:id="@+id/P2"
-            android:layout_width="319dp"
+            android:layout_width="match_parent"
             android:layout_height="69dp"
             android:text="@string/juntar_ursal"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
+            tools:layout_editor_absoluteY="16dp"
+            android:fontFamily="sans-serif-medium"/>
 
         <TextView
             android:id="@+id/P3"
-            android:layout_width="319dp"
-            android:layout_height="122dp"
+            android:layout_width="match_parent"
+            android:layout_height="174dp"
             android:text="@string/final_parte2"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
+            tools:layout_editor_absoluteY="16dp"
+            android:fontFamily="sans-serif-medium"/>
 
         <Button
             android:id="@+id/btn_questionario"
             android:layout_width="match_parent"
-            android:layout_height="209dp"
+            android:layout_height="138dp"
+            android:background="@drawable/button2"
             android:text="Responder Questionário" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
 
         <Button
             android:id="@+id/btn_fascista"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:background="@drawable/button"
             android:text="me conformo como as coisas estão" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
