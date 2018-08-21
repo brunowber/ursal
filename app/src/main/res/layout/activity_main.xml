@@ -13,21 +13,37 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/Espaco1"
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:layout_weight="1"
+            />
+
         <Button
             android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="200sp"
+            android:layout_height="1sp"
             android:layout_weight="1"
             android:text="Manter-se no sistema velho e desonesto"
             android:textSize="10sp"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="72sp"
-            tools:layout_editor_absoluteY="134sp" />
+            tools:layout_editor_absoluteY="134sp"
+            android:layout_marginLeft="90sp"
+            />
+
+        <TextView
+            android:id="@+id/Espaco2"
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:layout_weight="0.2"
+            />
 
         <Button
             android:id="@+id/button_ursal"
-            android:layout_width="match_parent"
-            android:layout_height="100sp"
+            android:layout_width="250sp"
+            android:layout_height="10sp"
             android:layout_weight="1"
             android:background="@color/cardview_dark_background"
             android:text="Entrar para ursal"
@@ -37,7 +53,16 @@
             android:visibility="visible"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="42sp"
-            tools:layout_editor_absoluteY="205sp" />
+            tools:layout_editor_absoluteY="205sp"
+            android:layout_marginLeft="70sp"
+            />
+
+        <TextView
+            android:id="@+id/Espaco3"
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:layout_weight="1"
+            />
 
         <TextView
             android:id="@+id/textView3"
@@ -56,7 +81,7 @@
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
-            android:layout_weight="0.4"
+            android:layout_weight="0.6"
             android:text="ON"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="296sp"
