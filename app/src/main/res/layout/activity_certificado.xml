@@ -20,12 +20,12 @@
             android:text="@string/tela_certificado"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp"
-            android:fontFamily="sans-serif-medium"/>
+            android:fontFamily="@assets/f"/>
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="302dp"
+            android:layout_height="318dp"
             android:src="@drawable/certificado_final" />
 
         <Button
@@ -33,14 +33,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/button3"
+            android:background="@drawable/button"
             android:text="@string/voltar"
             tools:layout_editor_absoluteX="18dp"
             tools:layout_editor_absoluteY="60dp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="11dp" />
 
         <TableRow
             android:layout_width="match_parent"
