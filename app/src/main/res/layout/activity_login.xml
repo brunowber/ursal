@@ -22,30 +22,27 @@
             android:text="@string/texto_parabens"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp"
-            android:fontFamily="sans-serif-medium"/>
+            android:fontFamily="sans-serif-medium"
+            android:textSize="18dp"/>
 
-        <TextView
-            android:id="@+id/P2"
+        <Space
             android:layout_width="match_parent"
-            android:layout_height="69dp"
-            android:text="@string/juntar_ursal"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp"
-            android:fontFamily="sans-serif-medium"/>
+            android:layout_height="10dp" />
 
         <TextView
             android:id="@+id/P3"
             android:layout_width="match_parent"
-            android:layout_height="174dp"
+            android:layout_height="252dp"
+            android:fontFamily="sans-serif-medium"
             android:text="@string/final_parte2"
+            android:textSize="18dp"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp"
-            android:fontFamily="sans-serif-medium"/>
+            tools:layout_editor_absoluteY="16dp" />
 
         <Button
             android:id="@+id/btn_questionario"
             android:layout_width="match_parent"
-            android:layout_height="138dp"
+            android:layout_height="105dp"
             android:background="@drawable/button2"
             android:text="Responder Questionário" />
 
@@ -57,7 +54,7 @@
             android:id="@+id/btn_fascista"
             android:layout_width="wrap_content"
             android:layout_height="59dp"
-            android:background="@drawable/button"
+            android:background="@drawable/button3"
             android:text="me conformo como as coisas estão" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -17,6 +17,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -170,8 +171,17 @@ public class CertificadoActivity extends AppCompatActivity {
         StringBuffer bufferG = getData(guerrilheiro);
         StringBuffer bufferD = getData(data);
 
-        canvas.drawText("" + bufferN, 500, 465, paint);
-        canvas.drawText("" + bufferG, 240, 545, paint);
+        double xPos = (canvas.getWidth() / 2.25);
+        double yPos = ((canvas.getHeight() / 2.5)) ;
+
+        Log.e("debug", ""+xPos);
+        Log.e("debug", ""+yPos);
+
+        canvas.drawText("" + bufferN, (float) xPos, (float) yPos, paint);
+
+        xPos = (canvas.getWidth() / 1.5);
+        yPos = ((canvas.getHeight() / 1.75)) ;
+        canvas.drawText("" + bufferG,(float) xPos, (float) yPos, paint);
         canvas.drawText("" + bufferD, 130, 955, paint);
 
         return mutableBitmap;
