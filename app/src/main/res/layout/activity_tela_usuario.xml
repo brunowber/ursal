@@ -9,15 +9,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/bandeira_unao_sovietica2">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="54dp"
             android:text="@string/tela_usuario"
+            android:textColor="@color/corFont"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
+            tools:layout_editor_absoluteY="16dp"
+            android:textSize="20dp"/>
 
         <EditText
             android:id="@+id/edt_nome"
@@ -29,7 +32,9 @@
             android:hint="Nome:"
             tools:layout_editor_absoluteX="25dp"
             tools:layout_editor_absoluteY="69dp"
-            android:maxLength="23"/>
+            android:maxLength="23"
+            android:textColor="@color/corFont"
+            android:textColorHint="@color/corFont"/>
 
         <EditText
             android:id="@+id/edt_guerrilheiro"
@@ -41,7 +46,10 @@
             android:text=""
             tools:layout_editor_absoluteX="25dp"
             tools:layout_editor_absoluteY="125dp"
-            android:maxLength="23"/>
+            android:maxLength="23"
+            android:textColor="@color/corFont"
+            android:textColorHint="@color/corFont"/>
+
         <Button
             android:id="@+id/btn_enviar"
             android:layout_width="match_parent"

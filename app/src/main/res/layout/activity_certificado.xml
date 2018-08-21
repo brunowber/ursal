@@ -7,20 +7,22 @@
     tools:context=".CertificadoActivity">
 
     <LinearLayout
-        android:layout_width="349dp"
-        android:layout_height="495dp"
+        android:layout_width="385dp"
+        android:layout_height="512dp"
+        android:background="@drawable/bandeira_unao_sovietica2"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="76dp"
+            android:fontFamily="@assets/f"
             android:text="@string/tela_certificado"
+            android:textColor="@color/corFont"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp"
-            android:fontFamily="@assets/f"/>
+            tools:layout_editor_absoluteY="16dp" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -33,7 +35,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/button"
             android:text="@string/voltar"
             tools:layout_editor_absoluteX="18dp"
             tools:layout_editor_absoluteY="60dp" />
@@ -48,7 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/twitter"/>
+                android:background="@drawable/twitter" />
 
             <Button
                 android:id="@+id/btn_gerar_certificado_facebook"

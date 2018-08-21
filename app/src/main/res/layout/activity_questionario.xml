@@ -10,7 +10,8 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="85dp">
+        tools:layout_editor_absoluteY="85dp"
+        android:background="@drawable/bandeira_unao_sovietica3">
 
         <LinearLayout
             android:layout_width="wrap_content"
