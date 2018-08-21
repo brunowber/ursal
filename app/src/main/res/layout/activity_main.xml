@@ -84,10 +84,11 @@
             android:layout_weight="0.6"
             android:text="ON"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="296sp"
+            tools:layout_editor_absoluteX="296sp" 
             tools:layout_editor_absoluteY="465sp"
             android:layout_marginLeft="295sp"
-            />
+            android:layout_height="1sp" />
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
