@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Ursal</string>
+    <string name="app_id">519001745194379</string>
     <string name="play_ursal">song ursal</string>
     <string name="title_activity_tela_login">TelaLogin</string>
     <string name="texto_parabens"> Parabéns! Você acaba de dar o primeiro passo ao caminho da revolução!</string>
@@ -35,7 +36,7 @@
 
     <string name="pergunta5">5-Ideologia de Gênero (kit-gay) deve ser ensinada a partir de que idade nas escolas?</string>
     <string name="doze">12-14</string>
-    <string name="dez">10-14</string>
+    <string name="dez">10-12</string>
     <string name="oito">8-10</string>
     <string name="seis">6-8</string>
 
@@ -84,10 +85,10 @@
     <string name="pergunta13">13-Qual a Melhor Forma de Governo?</string>
     <string name="comunismo">Comunismo</string>
 
-    <string name="tela_usuario">Antes de prosseguir precsamos saber seu nome e seu codinome guerrilheiro!</string>
+    <string name="tela_usuario">Todos somos iguais Antes de prosseguir precsamos saber seu nome e seu codinome guerrilheiro!</string>
     <string name="tela_certificado">Todo o plano já está sendo orquestrado e logo lhe passaremos mais informações. \nEsteja Preparado, a mudança está próxima!</string>
     <string name="certificado_whats">WhatsApp</string>
-    <string name="certificado_face">Facebbok</string>
+    <string name="certificado_face">Facebook</string>
     <string name="certificado_twitter">Twitter</string>
     <string name="voltar">Mudar seus dados</string>
 

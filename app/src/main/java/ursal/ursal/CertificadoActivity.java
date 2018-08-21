@@ -10,32 +10,35 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
-import android.graphics.drawable.BitmapDrawable;
 import android.media.Image;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Environment;
-import android.provider.MediaStore;
-import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.facebook.share.model.ShareLinkContent;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
+import com.facebook.login.LoginManager;
+import com.facebook.login.LoginResult;
+import com.facebook.share.model.SharePhoto;
+import com.facebook.share.model.SharePhotoContent;
 import com.facebook.share.widget.ShareDialog;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.NotActiveException;
 import java.io.OutputStream;
+import java.util.Arrays;
+import java.util.List;
 
 public class CertificadoActivity extends AppCompatActivity {
 
@@ -44,9 +47,11 @@ public class CertificadoActivity extends AppCompatActivity {
     Button btn_gerar_certificado_whatsapp;
     Button btn_gerar_certificado_facebook;
     Button btn_gerar_certificado_twitter;
-
+    ShareDialog shareDialog;
+    ImageView certificado;
     Button btn_voltar;
-
+    CallbackManager callbackManager;
+    LoginManager manager;
     DataBaseHelper db;
 
     @Override
@@ -54,13 +59,17 @@ public class CertificadoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_certificado);
 
-        ActivityCompat.requestPermissions(CertificadoActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
-
         db = new DataBaseHelper(this);
+        ActivityCompat.requestPermissions(CertificadoActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+        createImageFile();
+
 
         btn_gerar_certificado_whatsapp = findViewById(R.id.btn_gerar_certificado_whatsapp);
         btn_gerar_certificado_facebook = findViewById(R.id.btn_gerar_certificado_facebook);
         btn_gerar_certificado_twitter = findViewById(R.id.btn_gerar_certificado_twitter);
+
+        certificado = findViewById(R.id.imageView);
+        certificado.setImageBitmap(createBitmap());
 
         btn_voltar = findViewById(R.id.btn_voltar_usuario);
 
@@ -84,7 +93,7 @@ public class CertificadoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Uri bmpUri = FileProvider.getUriForFile(CertificadoActivity.this, BuildConfig.APPLICATION_ID + ".provider", createImageFile());
-                shareFacebook(bmpUri);
+                //shareFacebook(bmpUri);
             }
         });
 
@@ -109,26 +118,47 @@ public class CertificadoActivity extends AppCompatActivity {
         startIntent(pacote, app, bmpUri );
     }
 
-    public void shareFacebook(Uri bmpUri) {
-        try {
-            throw  new NotActiveException();
-        } catch (NotActiveException e) {
-            e.printStackTrace();
-        }
+    public void shareFacebook(final Uri bmpUri) {
+        FacebookSdk.sdkInitialize(getApplicationContext());
+        callbackManager = CallbackManager.Factory.create();
+        manager = LoginManager.getInstance();
+
+        List<String> permissionsNeeds = Arrays.asList("publish_actions");
+        manager.logInWithPublishPermissions(this, permissionsNeeds);
+        manager.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+                SharePhoto photo = new SharePhoto.Builder()
+                        .setImageUrl(bmpUri)
+                        .setCaption("Caption is Important")
+                        .build();
+                SharePhotoContent content = new SharePhotoContent.Builder()
+                        .addPhoto(photo)
+                        .build();
+
+                shareDialog.show(content);
+            }
+
+            @Override
+            public void onCancel() {
+
+            }
+
+            @Override
+            public void onError(FacebookException error) {
+
+            }
+        });
     }
 
-    public File createImageFile() {
+    public Bitmap createBitmap(){
         Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.certificado_final);
-        File path = Environment.getExternalStorageDirectory();
-        File dir = new File(path + "/save/");
-        dir.mkdir();
         Bitmap mutableBitmap = bm.copy(Bitmap.Config.ARGB_8888, true);
-
 
         canvas = new Canvas(mutableBitmap);
         Paint paint = new Paint();
         paint.setColor(Color.BLACK);
-        paint.setTextSize(45);
+        paint.setTextSize(55);
         Typeface tf =Typeface.createFromAsset(getAssets(),"fonts/Deutsch.ttf");
         paint.setTypeface(Typeface.create(tf, Typeface.ITALIC));
 
@@ -140,25 +170,31 @@ public class CertificadoActivity extends AppCompatActivity {
         StringBuffer bufferG = getData(guerrilheiro);
         StringBuffer bufferD = getData(data);
 
-
-
         canvas.drawText("" + bufferN, 500, 465, paint);
         canvas.drawText("" + bufferG, 240, 545, paint);
         canvas.drawText("" + bufferD, 130, 955, paint);
 
-            File file = new File(getExternalFilesDir(Environment.DIRECTORY_PICTURES), "certificado.png");
-            OutputStream out;
-            try {
-                out = new FileOutputStream(file);
-                mutableBitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
-                out.flush();
-                out.close();
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return file;
+        return mutableBitmap;
+    }
+
+    public File createImageFile() {
+        Bitmap mutableBitmap = createBitmap();
+        File path = Environment.getExternalStorageDirectory();
+        File dir = new File(path + "/save/");
+        dir.mkdir();
+        File file = new File(getExternalFilesDir(Environment.DIRECTORY_PICTURES), "certificado.png");
+        OutputStream out;
+        try {
+            out = new FileOutputStream(file);
+            mutableBitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
+            out.flush();
+            out.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return file;
     }
 
     public StringBuffer getData(Cursor data){
@@ -191,5 +227,10 @@ public class CertificadoActivity extends AppCompatActivity {
         int duration = Toast.LENGTH_LONG;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
+    }
+
+    @Override
+    public void onBackPressed() {
+        this.moveTaskToBack(true);
     }
 }

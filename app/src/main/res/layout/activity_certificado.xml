@@ -21,10 +21,16 @@
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp" />
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/certificado_final" />
+
         <Button
             android:id="@+id/btn_voltar_usuario"
             android:layout_width="match_parent"
-            android:layout_height="162dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/voltar"
             tools:layout_editor_absoluteX="18dp"
