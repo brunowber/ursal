@@ -7,9 +7,9 @@
     tools:context=".CertificadoActivity">
 
     <LinearLayout
-        android:layout_width="385dp"
+        android:layout_width="384dp"
         android:layout_height="512dp"
-        android:background="@drawable/bandeira_unao_sovietica2"
+        android:background="@drawable/bandeira_unao_sovietica10"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
@@ -21,13 +21,13 @@
             android:fontFamily="@assets/f"
             android:text="@string/tela_certificado"
             android:textColor="@color/corFont"
-            android:textSize="15dp"
+            android:textSize="17dp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp" />
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
+            android:layout_width="353dp"
             android:layout_height="318dp"
             android:src="@drawable/certificado_final" />
 

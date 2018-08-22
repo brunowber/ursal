@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="514dp"
-        android:background="@drawable/bandeira_unao_sovietica2"
+        android:background="@drawable/bandeira_unao_sovietica10"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-3dp">

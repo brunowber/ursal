@@ -5,19 +5,26 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import java.util.Random;
 
 public class MainActivity extends Activity {
 
     DataBaseHelper db;
     MediaPlayer ursalMP;
+    MediaPlayer fascistaMP;
     Button btnUrsal;
     Button buttonFascista;
     Button buttonFascista2;
+    Random r = new Random();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,24 +55,44 @@ public class MainActivity extends Activity {
         buttonFascista.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                toast("FASCISTA!");
+
+
+                int a = r.nextInt(4 - 1)+ 1;
+                Log.e("debug",""+a);
+                switch (a) {
+                    case 1:
+                        toast("FASCISTA!", R.raw.fascista);
+                        break;
+                    case 2:
+                        toast("PARA FASCISTA!", R.raw.para_fascista);
+                        break;
+                    case 3:
+                        toast("FASCISTA NÉ CARA!", R.raw.fascista_ne_cara);
+                        break;
+                }
             }
         });
         buttonFascista2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                toast("FASCISTA!");
+                toast("PORCO CAPITALISTA!", R.raw.porco_capitalista);
             }
         });
-
     }
 
-    public void toast(String msg){
+    public void toast(String msg, int som){
+        fascistaMP = MediaPlayer.create(this, som);
+        fascistaMP.start();
         Context context = getApplicationContext();
         CharSequence text = msg;
         int duration = Toast.LENGTH_LONG;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
+        fascistaMP.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            public void onCompletion(MediaPlayer fascistaMP) {
+                fascistaMP.release();
+            }
+        });
     }
 
     protected void onPause() {

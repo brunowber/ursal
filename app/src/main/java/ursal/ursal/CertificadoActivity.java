@@ -54,6 +54,8 @@ public class CertificadoActivity extends AppCompatActivity {
     Button btn_voltar;
     DataBaseHelper db;
     MediaPlayer ursalMP;
+    double xPos;
+    double yPos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -135,7 +137,7 @@ public class CertificadoActivity extends AppCompatActivity {
         canvas = new Canvas(mutableBitmap);
         Paint paint = new Paint();
         paint.setColor(Color.BLACK);
-        paint.setTextSize(40);
+        paint.setTextSize(45);
         Typeface tf =Typeface.createFromAsset(getAssets(),"fonts/Deutsch.ttf");
         paint.setTypeface(Typeface.create(tf, Typeface.ITALIC));
 
@@ -147,15 +149,11 @@ public class CertificadoActivity extends AppCompatActivity {
         StringBuffer bufferG = getData(guerrilheiro);
         StringBuffer bufferD = getData(data);
 
-        double xPos = (canvas.getWidth() / 3.1);
-        double yPos = ((canvas.getHeight() / 2.2)) ;
-
-        Log.e("debug", ""+xPos);
-        Log.e("debug", ""+yPos);
-
+        xPos = (canvas.getWidth() / 3.1);
+        yPos = ((canvas.getHeight() / 2.2)) ;
         canvas.drawText("" + bufferN, (float) xPos, (float) yPos, paint);
 
-        xPos = (canvas.getWidth() / 5.8);
+        xPos = (canvas.getWidth() / 6);
         yPos = ((canvas.getHeight() / 1.85)) ;
         canvas.drawText("" + bufferG,(float) xPos, (float) yPos, paint);
 

@@ -2,6 +2,7 @@
     <string name="app_name">Ursal</string>
     <string name="app_id">519001745194379</string>
     <string name="play_ursal">song ursal</string>
+    <string name="bem_vindo">Bem-vindo a URSAL</string>
     <string name="title_activity_tela_login">TelaLogin</string>
     <string name="texto_parabens"> Parabéns! Você acaba de dar o primeiro passo ao caminho da revolução!</string>
     <string name="juntar_ursal">Junte-se ao Grande Plano Ursal, se aliste, precisaremos que estejas prontx para lutar pela nova União da República Socialista Latino Americana.</string>
@@ -28,11 +29,11 @@
     <string name="marx">O Jovem Karl Marx.</string>
     <string name="xuxa">Xuxa e os Duendes.</string>
 
-    <string name="pergunta4">4-Quem deve ser o Cantor do Novo Hino da República?</string>
-    <string name="geraldo">Geraldo Vandré</string>
-    <string name="caetano">Caetano Veloso</string>
-    <string name="borel">Nego do Borel</string>
-    <string name="vittar">Pablo Vittar</string>
+    <string name="pergunta4">4-Como deve ser a bandeira da nova república: vermelha com o brasão de uma foice e martelo dourados?</string>
+    <string name="geraldo">Vermelha com o brasão de um martelo e uma foice dourados</string>
+    <string name="caetano">Vermelha com o brasão de uma foice dourada e um martelo dourado</string>
+    <string name="borel">Vermelha com o brasão de um martelo dourado e uma foice dourada</string>
+    <string name="vittar">A bandeira padrão da URSS</string>
 
     <string name="pergunta5">5-Ideologia de Gênero (kit-gay) deve ser ensinada a partir de que idade nas escolas?</string>
     <string name="doze">12-14</string>

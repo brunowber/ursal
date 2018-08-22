@@ -11,7 +11,7 @@
         android:layout_height="fill_parent"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="85dp"
-        android:background="@drawable/bandeira_unao_sovietica3"
+        android:background="@drawable/bandeira_unao_sovietica10"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
@@ -97,12 +97,12 @@
                 >
 
                 <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="322dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/stalin" />
+                    android:text="@string/stalin"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold" />
 
                 <RadioButton
                     android:textStyle="bold"
@@ -130,10 +130,10 @@
             </RadioGroup>
 
             <TextView
-                android:textColor="#FFFF00"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/pergunta3"
+                android:textColor="#FFFF00"
                 tools:layout_editor_absoluteX="56dp"
                 tools:layout_editor_absoluteY="16dp" />
 
@@ -142,12 +142,12 @@
                 android:layout_height="107dp">
 
                 <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="322dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/lula" />
+                    android:text="@string/lula"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold" />
 
                 <RadioButton
                     android:textStyle="bold"
@@ -184,39 +184,39 @@
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="107dp">
+                android:layout_height="171dp">
 
                 <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="322dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/geraldo" />
-
-                <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="56dp"
                     android:layout_weight="1"
-                    android:text="@string/caetano" />
+                    android:text="@string/geraldo"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold" />
 
                 <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="54dp"
                     android:layout_weight="1"
-                    android:text="@string/borel" />
+                    android:text="@string/caetano"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold" />
 
                 <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="56dp"
                     android:layout_weight="1"
-                    android:text="@string/vittar" />
+                    android:text="@string/borel"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:text="@string/vittar"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold" />
             </RadioGroup>
 
             <TextView
@@ -232,12 +232,12 @@
                 android:layout_height="107dp">
 
                 <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="322dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/doze" />
+                    android:text="@string/doze"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold" />
 
                 <RadioButton
                     android:textStyle="bold"
@@ -277,12 +277,12 @@
                 android:layout_height="107dp">
 
                 <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="322dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/trafico" />
+                    android:text="@string/trafico"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold" />
 
                 <RadioButton
                     android:textStyle="bold"
@@ -322,12 +322,12 @@
                 android:layout_height="140dp">
 
                 <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="322dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/paz" />
+                    android:text="@string/paz"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold" />
 
                 <RadioButton
                     android:textStyle="bold"
@@ -367,36 +367,36 @@
                 android:layout_height="197dp">
 
                 <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="322dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="374dp"
+                    android:layout_height="2dp"
                     android:layout_weight="1"
-                    android:text="@string/gigante" />
+                    android:text="@string/gigante"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold" />
 
                 <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="5dp"
                     android:layout_weight="1"
-                    android:text="@string/machistas" />
+                    android:text="@string/machistas"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold" />
 
                 <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="@string/hetero" />
+                    android:text="@string/hetero"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold" />
 
                 <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="6dp"
                     android:layout_weight="1"
-                    android:text="@string/operaria" />
+                    android:text="@string/operaria"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold" />
             </RadioGroup>
 
             <TextView
