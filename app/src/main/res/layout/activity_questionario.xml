@@ -11,88 +11,118 @@
         android:layout_height="fill_parent"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="85dp"
-        android:background="@drawable/bandeira_unao_sovietica3">
+        android:background="@drawable/bandeira_unao_sovietica3"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             tools:layout_editor_absoluteX="45dp"
-            tools:layout_editor_absoluteY="8dp">
+            tools:layout_editor_absoluteY="8dp"
+            >
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="46dp"
                 android:text="@string/perguntas"
                 tools:layout_editor_absoluteX="56dp"
-                tools:layout_editor_absoluteY="16dp" />
+                tools:layout_editor_absoluteY="16dp"
+                android:textColor="#FFFF00"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pergunta1"
                 tools:layout_editor_absoluteX="56dp"
-                tools:layout_editor_absoluteY="16dp" />
+                tools:layout_editor_absoluteY="16dp"
+                android:textColor="#FFFF00"
+                />
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="139dp">
+                android:layout_height="139dp"
+                >
 
                 <RadioButton
                     android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/maconha" />
+                    android:text="@string/maconha"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold"
+                    />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/aborto" />
+                    android:text="@string/aborto"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold"
+                    />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/penal" />
+                    android:text="@string/penal"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold"
+                    />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/medicos" />
+                    android:text="@string/medicos"
+                    android:textColor="#FFFF00"
+                    android:textStyle="bold"
+                    />
             </RadioGroup>
 
             <TextView
+                android:textColor="#FFFF00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pergunta2"
                 tools:layout_editor_absoluteX="56dp"
-                tools:layout_editor_absoluteY="16dp" />
+                tools:layout_editor_absoluteY="16dp"
+                />
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                >
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/stalin" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/karl" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/lenin" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -100,6 +130,7 @@
             </RadioGroup>
 
             <TextView
+                android:textColor="#FFFF00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pergunta3"
@@ -111,24 +142,32 @@
                 android:layout_height="107dp">
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/lula" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/che" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/marx" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -136,9 +175,10 @@
             </RadioGroup>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="42dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/pergunta4"
+                android:textColor="#FFFF00"
                 tools:layout_editor_absoluteX="56dp"
                 tools:layout_editor_absoluteY="16dp" />
 
@@ -147,24 +187,32 @@
                 android:layout_height="107dp">
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/geraldo" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/caetano" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/borel" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -172,6 +220,7 @@
             </RadioGroup>
 
             <TextView
+                android:textColor="#FFFF00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pergunta5"
@@ -183,24 +232,32 @@
                 android:layout_height="107dp">
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/doze" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/dez" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/oito" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -208,6 +265,7 @@
             </RadioGroup>
 
             <TextView
+                android:textColor="#FFFF00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pergunta6"
@@ -219,24 +277,32 @@
                 android:layout_height="107dp">
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/trafico" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/brainstorm" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/recreativo" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -244,6 +310,7 @@
             </RadioGroup>
 
             <TextView
+                android:textColor="#FFFF00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pergunta7"
@@ -255,24 +322,32 @@
                 android:layout_height="140dp">
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/paz" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/gay" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/nenhuma" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -280,6 +355,7 @@
             </RadioGroup>
 
             <TextView
+                android:textColor="#FFFF00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pergunta8"
@@ -291,24 +367,32 @@
                 android:layout_height="197dp">
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/gigante" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/machistas" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/hetero" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -316,6 +400,7 @@
             </RadioGroup>
 
             <TextView
+                android:textColor="#FFFF00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pergunta9"
@@ -327,24 +412,32 @@
                 android:layout_height="156dp">
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/crime" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/crencas" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/orgulho" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -352,6 +445,7 @@
             </RadioGroup>
 
             <TextView
+                android:textColor="#FFFF00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pergunta10"
@@ -363,24 +457,32 @@
                 android:layout_height="154dp">
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/divida" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/povos" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/patria" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -388,6 +490,7 @@
             </RadioGroup>
 
             <TextView
+                android:textColor="#FFFF00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pergunta11"
@@ -399,24 +502,32 @@
                 android:layout_height="107dp">
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/psicologica" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/reorientacao" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/prisao" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -424,6 +535,7 @@
             </RadioGroup>
 
             <TextView
+                android:textColor="#FFFF00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pergunta12"
@@ -435,24 +547,32 @@
                 android:layout_height="107dp">
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/capistalista" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/cristao" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/cientologia" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -460,6 +580,7 @@
             </RadioGroup>
 
             <TextView
+                android:textColor="#FFFF00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pergunta13"
@@ -471,24 +592,32 @@
                 android:layout_height="107dp">
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/comunismo" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/comunismo" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/comunismo" />
 
                 <RadioButton
+                    android:textStyle="bold"
+                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
