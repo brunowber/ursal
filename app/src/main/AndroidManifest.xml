@@ -38,10 +38,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".QuestionarioActivity" />
-        <activity android:name=".TelaUsuarioActivity" />
-        <activity android:name=".CertificadoActivity"></activity>
+        <activity android:name=".LoginActivity" android:screenOrientation="portrait" />
+        <activity android:name=".QuestionarioActivity" android:screenOrientation="portrait" />
+        <activity android:name=".TelaUsuarioActivity" android:screenOrientation="portrait" />
+        <activity android:name=".CertificadoActivity" android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>

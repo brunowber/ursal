@@ -3,6 +3,7 @@ package ursal.ursal;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -24,9 +25,15 @@ public class MainActivity extends Activity {
 
         db = new DataBaseHelper(this);
 
+
         ursalMP = MediaPlayer.create(this, R.raw.hino);
         ursalMP.start();
 
+        Cursor cursor = db.getAllData();
+        if (cursor != null && (cursor.getCount() > 0)){
+            Intent i = new Intent(getBaseContext(), CertificadoActivity.class);
+            startActivity(i);
+        }
         btnUrsal = findViewById(R.id.button_ursal);
         buttonFascista = findViewById(R.id.button3);
         buttonFascista2 = findViewById(R.id.button2);
@@ -59,6 +66,19 @@ public class MainActivity extends Activity {
         int duration = Toast.LENGTH_LONG;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
+    }
+
+    protected void onPause() {
+        if (ursalMP.isPlaying()) {
+            ursalMP.pause();
+        }
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        ursalMP.start();
     }
 
 }
