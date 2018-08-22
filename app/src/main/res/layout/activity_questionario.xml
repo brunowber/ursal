@@ -49,7 +49,7 @@
                     android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/maconha"
+                    android:text="@string/movimento"
                     android:textColor="#FFFF00"
                     android:textStyle="bold"
                     />
@@ -58,7 +58,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/aborto"
+                    android:text="@string/pior_que_ta"
                     android:textColor="#FFFF00"
                     android:textStyle="bold"
                     />
@@ -67,7 +67,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/penal"
+                    android:text="@string/patria_grande"
                     android:textColor="#FFFF00"
                     android:textStyle="bold"
                     />
@@ -76,7 +76,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/medicos"
+                    android:text="@string/expressao"
                     android:textColor="#FFFF00"
                     android:textStyle="bold"
                     />
@@ -100,7 +100,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/stalin"
+                    android:text="@string/russia"
                     android:textColor="#FFFF00"
                     android:textStyle="bold" />
 
@@ -110,7 +110,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/karl" />
+                    android:text="@string/venezuela" />
 
                 <RadioButton
                     android:textStyle="bold"
@@ -118,7 +118,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/lenin" />
+                    android:text="@string/coreia_norte" />
 
                 <RadioButton
                     android:textStyle="bold"
@@ -126,7 +126,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/maria" />
+                    android:text="@string/cuba" />
             </RadioGroup>
 
             <TextView
@@ -190,7 +190,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:layout_weight="1"
-                    android:text="@string/geraldo"
+                    android:text="@string/foice_dourado"
                     android:textColor="#FFFF00"
                     android:textStyle="bold" />
 
@@ -198,7 +198,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="54dp"
                     android:layout_weight="1"
-                    android:text="@string/caetano"
+                    android:text="@string/foice_martelo_dourado"
                     android:textColor="#FFFF00"
                     android:textStyle="bold" />
 
@@ -206,7 +206,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:layout_weight="1"
-                    android:text="@string/borel"
+                    android:text="@string/vermelho_brasao"
                     android:textColor="#FFFF00"
                     android:textStyle="bold" />
 
@@ -214,7 +214,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="42dp"
                     android:layout_weight="1"
-                    android:text="@string/vittar"
+                    android:text="@string/urss"
                     android:textColor="#FFFF00"
                     android:textStyle="bold" />
             </RadioGroup>
@@ -235,7 +235,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/doze"
+                    android:text="@string/raio"
                     android:textColor="#FFFF00"
                     android:textStyle="bold" />
 
@@ -245,7 +245,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/dez" />
+                    android:text="@string/consciencia" />
 
                 <RadioButton
                     android:textStyle="bold"
@@ -253,7 +253,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/oito" />
+                    android:text="@string/impostos" />
 
                 <RadioButton
                     android:textStyle="bold"
@@ -261,7 +261,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/seis" />
+                    android:text="@string/voar_cuba" />
             </RadioGroup>
 
             <TextView
@@ -325,7 +325,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/paz"
+                    android:text="@string/dez"
                     android:textColor="#FFFF00"
                     android:textStyle="bold" />
 
@@ -335,7 +335,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/gay" />
+                    android:text="@string/dez" />
 
                 <RadioButton
                     android:textStyle="bold"
@@ -343,7 +343,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/nenhuma" />
+                    android:text="@string/dez" />
 
                 <RadioButton
                     android:textStyle="bold"
@@ -351,7 +351,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/foice" />
+                    android:text="@string/dez" />
             </RadioGroup>
 
             <TextView
@@ -368,7 +368,7 @@
 
                 <RadioButton
                     android:layout_width="374dp"
-                    android:layout_height="2dp"
+                    android:layout_height="1dp"
                     android:layout_weight="1"
                     android:text="@string/gigante"
                     android:textColor="#FFFF00"
@@ -378,7 +378,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="5dp"
                     android:layout_weight="1"
-                    android:text="@string/machistas"
+                    android:text="@string/lacrou"
                     android:textColor="#FFFF00"
                     android:textStyle="bold" />
 
@@ -386,7 +386,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="@string/hetero"
+                    android:text="@string/sociedade_historia"
                     android:textColor="#FFFF00"
                     android:textStyle="bold" />
 
@@ -417,7 +417,7 @@
                     android:layout_width="322dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/crime" />
+                    android:text="@string/kkkk" />
 
                 <RadioButton
                     android:textStyle="bold"
@@ -425,7 +425,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/crencas" />
+                    android:text="@string/heuheu" />
 
                 <RadioButton
                     android:textStyle="bold"
@@ -433,7 +433,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/orgulho" />
+                    android:text="@string/rsrs" />
 
                 <RadioButton
                     android:textStyle="bold"
@@ -441,7 +441,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/vegano" />
+                    android:text="@string/ahsh" />
             </RadioGroup>
 
             <TextView
@@ -457,147 +457,12 @@
                 android:layout_height="154dp">
 
                 <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="322dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/divida" />
-
-                <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/povos" />
-
-                <RadioButton
-                    android:textStyle="bold"
+                    android:text="@string/comunismo"
                     android:textColor="#FFFF00"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/patria" />
-
-                <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/impor" />
-            </RadioGroup>
-
-            <TextView
-                android:textColor="#FFFF00"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pergunta11"
-                tools:layout_editor_absoluteX="56dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="107dp">
-
-                <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="322dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/psicologica" />
-
-                <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/reorientacao" />
-
-                <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/prisao" />
-
-                <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/expulsao" />
-            </RadioGroup>
-
-            <TextView
-                android:textColor="#FFFF00"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pergunta12"
-                tools:layout_editor_absoluteX="56dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="107dp">
-
-                <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="322dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/capistalista" />
-
-                <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/cristao" />
-
-                <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/cientologia" />
-
-                <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/familia" />
-            </RadioGroup>
-
-            <TextView
-                android:textColor="#FFFF00"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/pergunta13"
-                tools:layout_editor_absoluteX="56dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="107dp">
-
-                <RadioButton
-                    android:textStyle="bold"
-                    android:textColor="#FFFF00"
-                    android:layout_width="322dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/comunismo" />
+                    android:textStyle="bold" />
 
                 <RadioButton
                     android:textStyle="bold"

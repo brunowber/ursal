@@ -11,17 +11,17 @@
     <string name="title_activity_questionario">Questionário Ursal</string>
     <string name="perguntas">Responde o Questionário a seguir para saber seu papel:</string>
 
-    <string name="pergunta1">1-Qual a primeira medida que deve ser tomada na Nova República Socialista?</string>
-    <string name="maconha">Liberar a Maconha</string>
-    <string name="aborto">Liberar o Aborto</string>
-    <string name="penal">Mudar a maioridade penal para 20 anos</string>
-    <string name="medicos">Convidar mais médicos cubanos</string>
+    <string name="pergunta1">1- Por que você quer entrar para a URSAL?</string>
+    <string name="movimento">Quero fazer parte deste grande movimento</string>
+    <string name="pior_que_ta">Pior que tá não fica</string>
+    <string name="patria_grande">Para fazer a Pátria grande</string>
+    <string name="expressao">Não escolho nenhuma opção acima, este é meu direito de expressão.</string>
 
-    <string name="pergunta2">2-Qual Destas figuras Históricas é Sua Favorita?</string>
-    <string name="stalin">Stalin</string>
-    <string name="karl">Karl Marx</string>
-    <string name="lenin">Lenin</string>
-    <string name="maria">Todos os Outros Acima</string>
+    <string name="pergunta2">2-Considera qual destes países o melhor para se viver?</string>
+    <string name="russia">Rússia</string>
+    <string name="venezuela">Venezuela</string>
+    <string name="coreia_norte">Coreia do Norte</string>
+    <string name="cuba">Cuba</string>
 
     <string name="pergunta3">3-Qual seu Filme Favorito?</string>
     <string name="lula">Lula o filho do Brasil.</string>
@@ -30,16 +30,16 @@
     <string name="xuxa">Xuxa e os Duendes.</string>
 
     <string name="pergunta4">4-Como deve ser a bandeira da nova república: vermelha com o brasão de uma foice e martelo dourados?</string>
-    <string name="geraldo">Vermelha com o brasão de um martelo e uma foice dourados</string>
-    <string name="caetano">Vermelha com o brasão de uma foice dourada e um martelo dourado</string>
-    <string name="borel">Vermelha com o brasão de um martelo dourado e uma foice dourada</string>
-    <string name="vittar">A bandeira padrão da URSS</string>
+    <string name="foice_dourado">Vermelha com o brasão de um martelo e uma foice dourados</string>
+    <string name="foice_martelo_dourado">Vermelha com o brasão de uma foice dourada e um martelo dourado</string>
+    <string name="vermelho_brasao">Vermelha com o brasão de um martelo dourado e uma foice dourada</string>
+    <string name="urss">A bandeira padrão da URSS</string>
 
-    <string name="pergunta5">5-Ideologia de Gênero (kit-gay) deve ser ensinada a partir de que idade nas escolas?</string>
-    <string name="doze">12-14</string>
-    <string name="dez">10-12</string>
-    <string name="oito">8-10</string>
-    <string name="seis">6-8</string>
+    <string name="pergunta5">5-Qual destes poder escolheria?</string>
+    <string name="raio">Raio de direitos humanos</string>
+    <string name="consciencia">Super consciência social</string>
+    <string name="impostos">Eliminação instantânea de Impostos</string>
+    <string name="voar_cuba">Voar pra Cuba</string>
 
     <string name="pergunta6">6-Além do uso medicinal, qual outra grande vantagem na liberação da Maconha?</string>
     <string name="trafico">Acabar com o tráfico</string>
@@ -47,43 +47,22 @@
     <string name="recreativo">Uso Recreativo</string>
     <string name="direitos">Direitos Humanos</string>
 
-    <string name="pergunta7">7-Para Enfrentar os Facistas, que arma você escolheria?</string>
-    <string name="paz">Paz e Amor</string>
-    <string name="gay">Beijo gay</string>
-    <string name="nenhuma">Nenhuma, eles também não terão direito à armas.</string>
-    <string name="foice">Foice e Martelo</string>
+    <string name="pergunta7">7-De 0 a 10, qual a nota que você daria para a URSAL?</string>
+    <string name="dez">10</string>
 
     <string name="pergunta8">8-Qual destas frases é sua favorita?</string>
     <string name="gigante">O gigante acordou.</string>
-    <string name="machistas">Machistas, Facistas, não passarão!</string>
-    <string name="hetero">Sai Daqui Hetero Nojento.</string>
+    <string name="lacrou">Lacrou manxs</string>
+    <string name="sociedade_historia">A história da sociedade até aos nossos dias é a história da luta de classes</string>
     <string name="operaria">Se a classe operária tudo produz, a ela tudo pertence.</string>
 
-    <string name="pergunta9">9-Que outra medida deve ser tomada no novo Estado?</string>
-    <string name="crime">Tornar o Machismo um crime.</string>
-    <string name="crencas">Proibir crenças religiosas.</string>
-    <string name="orgulho">Todo dia 24 ser Feriado do Orgulho LGBT.</string>
-    <string name="vegano">Instituir o estado Vegano, Carnívoros serão criminosos.</string>
+    <string name="pergunta9">9-Qual sua opinião sobre Política de liberalismo econômico com costumes conservadores?</string>
+    <string name="kkkk">KKKKKKKKKKKKKKKKKKKKKKKKKKK..</string>
+    <string name="heuheu">HEUHEUEHUEHEUHEUEHUEHEUE.</string>
+    <string name="rsrs">RSRSRS</string>
+    <string name="ahsh">ASHUAHUEHSJHSHUEHSUHEUHS</string>
 
-    <string name="pergunta10">10-Agora que todos terão mesma renda, oportunidade e qualidade de vida, cotas não serão mais necessárias; como pagar a dívida histórica?</string>
-    <string name="divida">Desnecessário, a Ursal não herdará esta divida.</string>
-    <string name="povos">Menos tempo de cadeia para povos de etnia não branca.</string>
-    <string name="patria">Estes povos terão prioridade para a escolha de suas funções na nova Pátria.</string>
-    <string name="impor">Impor nossa Igualdade para o resto do mundo.</string>
-
-    <string name="pergunta11">11-O que fazer com os grandes empresários que atualmente roubam o funcionalismo?</string>
-    <string name="psicologica">Seções psicólgicas para reablitação.</string>
-    <string name="reorientacao">Reorientação sexual</string>
-    <string name="prisao">Prisão Imediata</string>
-    <string name="expulsao">Expulsão da nova República</string>
-
-    <string name="pergunta12">12-Qual o Maior Inimigo do novo Sistema?</string>
-    <string name="capistalista">Porcos Capitalistas</string>
-    <string name="cristao">Cristianismo</string>
-    <string name="cientologia">Cientologia</string>
-    <string name="familia">Família Tradicional Brasileira</string>
-
-    <string name="pergunta13">13-Qual a Melhor Forma de Governo?</string>
+    <string name="pergunta10">10-Qual a Melhor Forma de Governo?</string>
     <string name="comunismo">Comunismo</string>
 
     <string name="tela_usuario">Antes de prosseguir precisamos saber seu nome e seu codinome guerrilheiro!</string>
