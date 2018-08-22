@@ -64,25 +64,11 @@
             android:layout_weight="1"
             />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="25sp"
-            android:layout_weight="0.1"
-            android:text="MUTAR"
-            android:textColor="#FFD700"
-            android:textSize="18sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="306sp"
-            tools:layout_editor_absoluteY="440sp"
-            android:layout_marginLeft="295sp"
-            />
-
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_weight="0.6"
-            android:text="ON"
+            android:text="Mutar"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="296sp" 
             tools:layout_editor_absoluteY="465sp"

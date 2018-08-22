@@ -11,6 +11,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
@@ -51,14 +52,16 @@ public class CertificadoActivity extends AppCompatActivity {
     ShareDialog shareDialog;
     ImageView certificado;
     Button btn_voltar;
-    CallbackManager callbackManager;
-    LoginManager manager;
     DataBaseHelper db;
+    MediaPlayer ursalMP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_certificado);
+
+        ursalMP = MediaPlayer.create(this, R.raw.hino);
+        ursalMP.start();
 
         db = new DataBaseHelper(this);
         ActivityCompat.requestPermissions(CertificadoActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
@@ -94,7 +97,7 @@ public class CertificadoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Uri bmpUri = FileProvider.getUriForFile(CertificadoActivity.this, BuildConfig.APPLICATION_ID + ".provider", createImageFile());
-                //shareFacebook(bmpUri);
+                shareFacebook(bmpUri);
             }
         });
 
@@ -120,36 +123,9 @@ public class CertificadoActivity extends AppCompatActivity {
     }
 
     public void shareFacebook(final Uri bmpUri) {
-        FacebookSdk.sdkInitialize(getApplicationContext());
-        callbackManager = CallbackManager.Factory.create();
-        manager = LoginManager.getInstance();
-
-        List<String> permissionsNeeds = Arrays.asList("publish_actions");
-        manager.logInWithPublishPermissions(this, permissionsNeeds);
-        manager.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(LoginResult loginResult) {
-                SharePhoto photo = new SharePhoto.Builder()
-                        .setImageUrl(bmpUri)
-                        .setCaption("Caption is Important")
-                        .build();
-                SharePhotoContent content = new SharePhotoContent.Builder()
-                        .addPhoto(photo)
-                        .build();
-
-                shareDialog.show(content);
-            }
-
-            @Override
-            public void onCancel() {
-
-            }
-
-            @Override
-            public void onError(FacebookException error) {
-
-            }
-        });
+        String pacote = "com.facebook.orca";
+        String app = "Facebook";
+        startIntent(pacote, app, bmpUri );
     }
 
     public Bitmap createBitmap(){
@@ -245,5 +221,18 @@ public class CertificadoActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         this.moveTaskToBack(true);
+    }
+
+    protected void onPause() {
+        if (ursalMP.isPlaying()) {
+            ursalMP.pause();
+        }
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        ursalMP.start();
     }
 }
