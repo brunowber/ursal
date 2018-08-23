@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ursal.ursal">
+    package="projetoursal.recursal">
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
@@ -31,17 +31,17 @@
 
 
 
-        <activity android:name=".MainActivity">
+        <activity android:name="projetoursal.recursal.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" android:screenOrientation="portrait" />
-        <activity android:name=".QuestionarioActivity" android:screenOrientation="portrait" />
-        <activity android:name=".TelaUsuarioActivity" android:screenOrientation="portrait" />
-        <activity android:name=".CertificadoActivity" android:screenOrientation="portrait">
+        <activity android:name="projetoursal.recursal.LoginActivity" android:screenOrientation="portrait" />
+        <activity android:name="projetoursal.recursal.QuestionarioActivity" android:screenOrientation="portrait" />
+        <activity android:name="projetoursal.recursal.TelaUsuarioActivity" android:screenOrientation="portrait" />
+        <activity android:name="projetoursal.recursal.CertificadoActivity" android:screenOrientation="portrait">
 
         </activity>
     </application>

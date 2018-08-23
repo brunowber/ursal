@@ -1,4 +1,4 @@
-package ursal.ursal;
+package projetoursal.recursal;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

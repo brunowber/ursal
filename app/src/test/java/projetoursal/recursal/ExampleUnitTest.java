@@ -1,4 +1,4 @@
-package ursal.ursal;
+package projetoursal.recursal;
 
 import org.junit.Test;
 

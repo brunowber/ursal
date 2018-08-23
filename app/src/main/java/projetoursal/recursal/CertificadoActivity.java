@@ -1,4 +1,4 @@
-package ursal.ursal;
+package projetoursal.recursal;
 
 import android.Manifest;
 import android.content.Context;
@@ -18,29 +18,22 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.facebook.CallbackManager;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookException;
-import com.facebook.FacebookSdk;
-import com.facebook.login.LoginManager;
-import com.facebook.login.LoginResult;
-import com.facebook.share.model.SharePhoto;
-import com.facebook.share.model.SharePhotoContent;
 import com.facebook.share.widget.ShareDialog;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.Arrays;
-import java.util.List;
 
 public class CertificadoActivity extends AppCompatActivity {
 
@@ -58,10 +51,19 @@ public class CertificadoActivity extends AppCompatActivity {
     double xPos;
     double yPos;
 
+    AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_certificado);
+
+        AdView adView = new AdView(this);
+        adView.setAdSize(AdSize.BANNER);
+        adView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         ursalMP = MediaPlayer.create(this, R.raw.hino);
         ursalMP.start();
@@ -149,7 +151,7 @@ public class CertificadoActivity extends AppCompatActivity {
         canvas = new Canvas(mutableBitmap);
         Paint paint = new Paint();
         paint.setColor(Color.BLACK);
-        paint.setTextSize(45);
+        paint.setTextSize(40);
         Typeface tf =Typeface.createFromAsset(getAssets(),"fonts/Deutsch.ttf");
         paint.setTypeface(Typeface.create(tf, Typeface.ITALIC));
 

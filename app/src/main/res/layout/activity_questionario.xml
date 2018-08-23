@@ -280,7 +280,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/trafico"
+                    android:text="@string/urso"
                     android:textColor="#FFFF00"
                     android:textStyle="bold" />
 
@@ -290,7 +290,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/brainstorm" />
+                    android:text="@string/capivara" />
 
                 <RadioButton
                     android:textStyle="bold"
@@ -306,7 +306,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/direitos" />
+                    android:text="@string/cobra" />
             </RadioGroup>
 
             <TextView

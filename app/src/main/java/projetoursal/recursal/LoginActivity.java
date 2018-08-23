@@ -1,4 +1,4 @@
-package ursal.ursal;
+package projetoursal.recursal;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,16 +9,30 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 public class LoginActivity extends AppCompatActivity {
 
     Button questionario;
     Button fascista;
     MediaPlayer fascistaMP;
 
+    AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        AdView adView = new AdView(this);
+        adView.setAdSize(AdSize.BANNER);
+        adView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         questionario = findViewById(R.id.btn_questionario);
         fascista = findViewById(R.id.btn_fascista);

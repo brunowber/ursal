@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Ursal</string>
+    <string name="admob_id">ca-app-pub-3940256099942544~3347511713</string>
     <string name="app_id">519001745194379</string>
     <string name="play_ursal">song ursal</string>
     <string name="bem_vindo">Bem-vindo a URSAL</string>
@@ -42,11 +43,11 @@
     <string name="impostos">Eliminação instantânea de Impostos</string>
     <string name="voar_cuba">Voar pra Cuba</string>
 
-    <string name="pergunta6">6-Além do uso medicinal, qual outra grande vantagem na liberação da Maconha?</string>
-    <string name="trafico">Acabar com o tráfico</string>
-    <string name="brainstorm">Brainstorm</string>
-    <string name="recreativo">Uso Recreativo</string>
-    <string name="direitos">Direitos Humanos</string>
+    <string name="pergunta6">6-Em sua opinião, qual será o mascote da URSAL?</string>
+    <string name="urso">Urso</string>
+    <string name="capivara">Capivara</string>
+    <string name="recreativo">Macaco</string>
+    <string name="cobra">Cobra</string>
 
     <string name="pergunta7">7-De 0 a 10, qual a nota que você daria para a URSAL?</string>
     <string name="dez">10</string>
