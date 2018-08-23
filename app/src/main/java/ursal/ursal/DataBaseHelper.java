@@ -71,4 +71,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         Cursor res = db.rawQuery("SELECT "+ DATA_ENTROU +" FROM  "+ TABLE_NAME+ " WHERE "+ ID +" = (SELECT MAX (" + ID + ") FROM "+ TABLE_NAME+")", null);
         return res;
     }
+    public void dropData() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("DELETE FROM "+ TABLE_NAME);
+    }
 }

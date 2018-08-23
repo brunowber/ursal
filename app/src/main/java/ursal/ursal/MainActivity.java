@@ -42,8 +42,8 @@ public class MainActivity extends Activity {
             startActivity(i);
         }
         btnUrsal = findViewById(R.id.button_ursal);
-        buttonFascista = findViewById(R.id.button3);
-        buttonFascista2 = findViewById(R.id.button2);
+        buttonFascista = findViewById(R.id.botao_capital);
+        buttonFascista2 = findViewById(R.id.botao_mudo);
 
         btnUrsal.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,8 +55,6 @@ public class MainActivity extends Activity {
         buttonFascista.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 int a = r.nextInt(4 - 1)+ 1;
                 Log.e("debug",""+a);
                 switch (a) {
@@ -75,7 +73,7 @@ public class MainActivity extends Activity {
         buttonFascista2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                toast("PORCO CAPITALISTA!", R.raw.porco_capitalista);
+                toast("FASCISTA!", R.raw.para_fascista);
             }
         });
     }
@@ -108,4 +106,8 @@ public class MainActivity extends Activity {
         ursalMP.start();
     }
 
+    @Override
+    public void onBackPressed() {
+        this.moveTaskToBack(true);
+    }
 }

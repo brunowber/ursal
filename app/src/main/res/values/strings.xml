@@ -9,6 +9,7 @@
     <string name="final_parte2">Apenas precisamos que responda um curto questionário para melhor definir seu papel no momento em que o plano for executado.</string>
 
     <string name="title_activity_questionario">Questionário Ursal</string>
+    <string name="deletar">Deletar</string>
     <string name="perguntas">Responde o Questionário a seguir para saber seu papel:</string>
 
     <string name="pergunta1">1- Por que você quer entrar para a URSAL?</string>

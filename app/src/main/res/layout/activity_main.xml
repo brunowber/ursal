@@ -30,7 +30,7 @@
             android:layout_height="110dp"
             android:layout_marginLeft="70sp"
             android:layout_weight="1"
-            android:background="@drawable/botao_comunista"
+            android:background="@drawable/botao_comuna"
             android:textAppearance="@style/TextAppearance.AppCompat.Button"
             android:textColor="#FFFFFF"
             android:textSize="22sp"
@@ -39,19 +39,19 @@
             tools:layout_editor_absoluteY="205sp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/botao_capital"
             android:layout_width="200sp"
             android:layout_height="43dp"
             android:layout_marginLeft="90sp"
             android:layout_weight="1"
-            android:background="@drawable/captalism"
+            android:background="@drawable/botao_capital"
             android:textSize="10sp"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="72sp"
             tools:layout_editor_absoluteY="134sp" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/botao_mudo"
             android:layout_width="102dp"
             android:layout_height="1sp"
             android:layout_marginLeft="280sp"

@@ -49,6 +49,7 @@ public class CertificadoActivity extends AppCompatActivity {
     Button btn_gerar_certificado_whatsapp;
     Button btn_gerar_certificado_facebook;
     Button btn_gerar_certificado_twitter;
+    Button btn_delete;
     ShareDialog shareDialog;
     ImageView certificado;
     Button btn_voltar;
@@ -74,10 +75,21 @@ public class CertificadoActivity extends AppCompatActivity {
         btn_gerar_certificado_facebook = findViewById(R.id.btn_gerar_certificado_facebook);
         btn_gerar_certificado_twitter = findViewById(R.id.btn_gerar_certificado_twitter);
 
+        btn_delete = findViewById(R.id.btn_delete);
+
         certificado = findViewById(R.id.imageView);
         certificado.setImageBitmap(createBitmap());
 
         btn_voltar = findViewById(R.id.btn_voltar_usuario);
+
+        btn_delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                db.dropData();
+                Intent inicio = new Intent(getBaseContext(), MainActivity.class);
+                startActivity(inicio);
+            }
+        });
 
         btn_voltar.setOnClickListener(new View.OnClickListener() {
             @Override

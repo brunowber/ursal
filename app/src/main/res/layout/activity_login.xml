@@ -44,7 +44,6 @@
             android:id="@+id/btn_questionario"
             android:layout_width="match_parent"
             android:layout_height="105dp"
-            android:background="@drawable/button2"
             android:text="Responder Questionário" />
 
         <Space
@@ -53,9 +52,8 @@
 
         <Button
             android:id="@+id/btn_fascista"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="59dp"
-            android:background="@drawable/button3"
             android:text="me conformo como as coisas estão" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
