@@ -14,13 +14,13 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
+            android:layout_width="352dp"
             android:layout_height="54dp"
             android:text="@string/tela_usuario"
             android:textColor="@color/corFont"
+            android:textSize="20dp"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp"
-            android:textSize="20dp"/>
+            tools:layout_editor_absoluteY="16dp" />
 
         <EditText
             android:id="@+id/edt_nome"
@@ -63,7 +63,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+            ads:adUnitId="ca-app-pub-1328632532738670/5911855123"></com.google.android.gms.ads.AdView>
 
     </LinearLayout>
 

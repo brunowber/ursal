@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Ursal</string>
-    <string name="admob_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_id">ca-app-pub-1328632532738670~5137937307</string>
+    <string name="unit_id">ca-app-pub-1328632532738670/5911855123</string>
     <string name="app_id">519001745194379</string>
     <string name="play_ursal">song ursal</string>
     <string name="bem_vindo">Bem-vindo a URSAL</string>
@@ -31,7 +32,7 @@
     <string name="marx">O Jovem Karl Marx.</string>
     <string name="xuxa">Xuxa e os Duendes.</string>
 
-    <string name="pergunta4">4-Como deve ser a bandeira da nova república: vermelha com o brasão de uma foice e martelo dourados?</string>
+    <string name="pergunta4">4-Como deve ser a bandeira da nova república?</string>
     <string name="foice_dourado">Vermelha com o brasão de um martelo e uma foice dourados</string>
     <string name="foice_martelo_dourado">Vermelha com o brasão de uma foice dourada e um martelo dourado</string>
     <string name="vermelho_brasao">Vermelha com o brasão de um martelo dourado e uma foice dourada</string>
@@ -51,6 +52,7 @@
 
     <string name="pergunta7">7-De 0 a 10, qual a nota que você daria para a URSAL?</string>
     <string name="dez">10</string>
+    <string name="treze">13</string>
 
     <string name="pergunta8">8-Qual destas frases é sua favorita?</string>
     <string name="gigante">O gigante acordou.</string>
