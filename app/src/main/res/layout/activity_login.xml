@@ -2,15 +2,17 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    tools:context=".LoginActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/bandeira_unao_sovietica10"
+    android:src="@drawable/bandeira_unao_sovietica10"
+    android:tileMode="repeat">
 
     <LinearLayout
         android:layout_width="384dp"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@drawable/bandeira_unao_sovietica10"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -20,14 +22,18 @@
 
         <TextView
             android:id="@+id/P"
-            android:layout_width="wrap_content"
+            android:layout_width="325dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-medium"
             android:text="@string/texto_parabens"
             android:textColor="@color/corFont"
             android:textSize="18sp"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
+            tools:layout_editor_absoluteY="16dp"
+            tools:targetApi="jelly_bean" />
 
         <Space
             android:layout_width="match_parent"
@@ -35,18 +41,22 @@
 
         <TextView
             android:id="@+id/P3"
-            android:layout_width="match_parent"
+            android:layout_width="327dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-medium"
             android:text="@string/final_parte2"
             android:textColor="@color/corFont"
             android:textSize="18sp"
             tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
+            tools:layout_editor_absoluteY="16dp"
+            tools:targetApi="jelly_bean" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="142dp" />
+            android:layout_height="109dp" />
 
         <Button
             android:id="@+id/btn_questionario"

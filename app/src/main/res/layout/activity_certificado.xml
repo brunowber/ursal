@@ -20,8 +20,11 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="351dp"
+            android:layout_width="334dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="@assets/f"
             android:text="@string/tela_certificado"
             android:textColor="@color/corFont"
