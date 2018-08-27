@@ -22,12 +22,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
-
-import com.facebook.share.widget.ShareDialog;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -36,22 +33,19 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class CertificadoActivity extends AppCompatActivity {
-
     Image image;
     Canvas canvas;
     Button btn_gerar_certificado_whatsapp;
     Button btn_gerar_certificado_facebook;
     Button btn_gerar_certificado_twitter;
     Button btn_delete;
-    ShareDialog shareDialog;
     ImageView certificado;
     Button btn_voltar;
     DataBaseHelper db;
     MediaPlayer ursalMP;
-    double xPos;
-    double yPos;
-
     AdView mAdView;
+    float xPos;
+    float yPos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +65,6 @@ public class CertificadoActivity extends AppCompatActivity {
         db = new DataBaseHelper(this);
         ActivityCompat.requestPermissions(CertificadoActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
         createImageFile();
-
 
         btn_gerar_certificado_whatsapp = findViewById(R.id.btn_gerar_certificado_whatsapp);
         btn_gerar_certificado_facebook = findViewById(R.id.btn_gerar_certificado_facebook);
@@ -105,7 +98,9 @@ public class CertificadoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Uri bmpUri = FileProvider.getUriForFile(CertificadoActivity.this, BuildConfig.APPLICATION_ID + ".provider", createImageFile());
-                shareWhatsApp(bmpUri);
+                String pacote = "com.whatsapp";
+                String app = "Whatsapp";
+                startIntent(pacote, app, bmpUri);
             }
         });
 
@@ -113,7 +108,9 @@ public class CertificadoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Uri bmpUri = FileProvider.getUriForFile(CertificadoActivity.this, BuildConfig.APPLICATION_ID + ".provider", createImageFile());
-                shareFacebook(bmpUri);
+                String pacote = "com.facebook.orca";
+                String app = "Facebook";
+                startIntent(pacote, app, bmpUri);
             }
         });
 
@@ -121,27 +118,11 @@ public class CertificadoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Uri bmpUri = FileProvider.getUriForFile(CertificadoActivity.this, BuildConfig.APPLICATION_ID + ".provider", createImageFile());
-                shareTwitter(bmpUri);
+                String pacote = "com.twitter.android";
+                String app = "Twitter";
+                startIntent(pacote, app, bmpUri);
             }
         });
-    }
-
-    public void shareWhatsApp(Uri bmpUri) {
-        String pacote = "com.whatsapp";
-        String app = "Whatsapp";
-        startIntent(pacote, app, bmpUri );
-    }
-
-    public void shareTwitter(Uri bmpUri) {
-        String pacote = "com.twitter.android";
-        String app = "Twitter";
-        startIntent(pacote, app, bmpUri );
-    }
-
-    public void shareFacebook(final Uri bmpUri) {
-        String pacote = "com.facebook.orca";
-        String app = "Facebook";
-        startIntent(pacote, app, bmpUri );
     }
 
     public Bitmap createBitmap(){
@@ -149,6 +130,10 @@ public class CertificadoActivity extends AppCompatActivity {
         Bitmap mutableBitmap = bm.copy(Bitmap.Config.ARGB_8888, true);
 
         canvas = new Canvas(mutableBitmap);
+
+        int width = canvas.getWidth();
+        int height = canvas.getHeight();
+
         Paint paint = new Paint();
         paint.setColor(Color.BLACK);
         paint.setTextSize(40);
@@ -163,18 +148,17 @@ public class CertificadoActivity extends AppCompatActivity {
         String bufferG = getData(guerrilheiro);
         String bufferD = getData(data);
 
+        xPos = (float)((width / 2) - bufferN.length()*6);
+        yPos = (float)((height / 2.2)) ;
+        canvas.drawText(bufferN, xPos, yPos, paint);
 
-        xPos = ((canvas.getWidth() / 2) - bufferN.length()*6);
-        yPos = ((canvas.getHeight() / 2.2)) ;
-        canvas.drawText(bufferN, (float) xPos, (float) yPos, paint);
+        xPos = (float)((width / 3) - bufferG.length()*6);
+        yPos = (float)((height / 1.85)) ;
+        canvas.drawText(bufferG, xPos, yPos, paint);
 
-        xPos = ((canvas.getWidth() / 3) - bufferG.length()*5);
-        yPos = ((canvas.getHeight() / 1.85)) ;
-        canvas.drawText(bufferG,(float) xPos, (float) yPos, paint);
-
-        xPos = (canvas.getWidth() / 8.4);
-        yPos = ((canvas.getHeight() / 1.08)) ;
-        canvas.drawText(bufferD, (float) xPos, (float) yPos, paint);
+        xPos = (float)(width / 8.4);
+        yPos = (float)((height / 1.08)) ;
+        canvas.drawText(bufferD, xPos, yPos, paint);
 
         return mutableBitmap;
     }
