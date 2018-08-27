@@ -23,7 +23,7 @@
             android:fontFamily="sans-serif-medium"
             android:text="@string/texto_parabens"
             android:textColor="@color/corFont"
-            android:textSize="18dp"
+            android:textSize="18sp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp" />
 
@@ -38,7 +38,7 @@
             android:fontFamily="sans-serif-medium"
             android:text="@string/final_parte2"
             android:textColor="@color/corFont"
-            android:textSize="18dp"
+            android:textSize="18sp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp" />
 
@@ -50,7 +50,7 @@
             android:id="@+id/btn_questionario"
             android:layout_width="match_parent"
             android:layout_height="105dp"
-            android:text="Responder Questionário" />
+            android:text="@string/responder_questionario" />
 
         <Space
             android:layout_width="match_parent"
@@ -60,15 +60,13 @@
             android:id="@+id/btn_fascista"
             android:layout_width="match_parent"
             android:layout_height="72dp"
-            android:text="me conformo como as coisas estão" />
+            android:text="@string/conformo" />
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/adView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-1328632532738670/5911855123"></com.google.android.gms.ads.AdView>
+            ads:adUnitId="ca-app-pub-1328632532738670/5911855123" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

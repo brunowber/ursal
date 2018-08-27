@@ -14,6 +14,15 @@
     <string name="deletar">Deletar</string>
     <string name="perguntas">Responde o Questionário a seguir para saber seu papel:</string>
 
+    <string name="mudo">Mutar</string>
+    <string name="responder_questionario">Responder Questionário</string>
+    <string name="conformo">Me conformo como as coisas estão</string>
+    <string name="enviar">Enviar Questionário</string>
+    <string name="send">Enviar</string>
+
+    <string name="guerrilheiro">Guerrilheiro: </string>
+    <string name="nome">Nome: </string>
+
     <string name="pergunta1">1- Por que você quer entrar para a URSAL?</string>
     <string name="movimento">Quero fazer parte deste grande movimento</string>
     <string name="pior_que_ta">Pior que tá não fica</string>

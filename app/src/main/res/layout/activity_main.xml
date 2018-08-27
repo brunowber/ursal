@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@drawable/bandeira_unao_sovietica10"
-    >
+    tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="27dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView3"
@@ -22,13 +24,13 @@
             android:layout_weight="1"
             android:text="@string/bem_vindo"
             android:textColor="@color/corFont"
-            android:textSize="30dp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/button_ursal"
             android:layout_width="250sp"
-            android:layout_height="110dp"
-            android:layout_marginLeft="70sp"
+            android:layout_height="110sp"
+            android:layout_marginStart="70sp"
             android:layout_weight="1"
             android:background="@drawable/botao_comuna"
             android:textAppearance="@style/TextAppearance.AppCompat.Button"
@@ -41,23 +43,21 @@
         <Button
             android:id="@+id/botao_capital"
             android:layout_width="200sp"
-            android:layout_height="43dp"
-            android:layout_marginLeft="90sp"
+            android:layout_height="43sp"
+            android:layout_marginStart="90sp"
             android:layout_weight="1"
             android:background="@drawable/botao_capital"
-            android:textSize="10sp"
-            tools:ignore="MissingConstraints"
+            android:textSize="12sp"
             tools:layout_editor_absoluteX="72sp"
             tools:layout_editor_absoluteY="134sp" />
 
         <Button
             android:id="@+id/botao_mudo"
-            android:layout_width="102dp"
-            android:layout_height="1sp"
-            android:layout_marginLeft="280sp"
+            android:layout_width="102sp"
+            android:layout_height="12sp"
+            android:layout_marginStart="280sp"
             android:layout_weight="0.6"
-            android:text="Mutar"
-            tools:ignore="MissingConstraints"
+            android:text="@string/mudo"
             tools:layout_editor_absoluteX="296sp"
             tools:layout_editor_absoluteY="465sp" />
 
@@ -65,10 +65,8 @@
             android:id="@+id/adView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-1328632532738670/5911855123"></com.google.android.gms.ads.AdView>
+            ads:adUnitId="ca-app-pub-1328632532738670/5911855123" />
 
     </LinearLayout>
 

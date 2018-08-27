@@ -493,8 +493,7 @@
                 android:id="@+id/btn_responder_questionario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Enviar Questionário" />
-
+                android:text="@string/enviar" />
 
         </LinearLayout>
     </ScrollView>

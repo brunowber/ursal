@@ -18,7 +18,7 @@
             android:layout_height="54dp"
             android:text="@string/tela_usuario"
             android:textColor="@color/corFont"
-            android:textSize="20dp"
+            android:textSize="20sp"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp" />
 
@@ -29,7 +29,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text=""
-            android:hint="Nome:"
+            android:hint="@string/nome"
             tools:layout_editor_absoluteX="25dp"
             tools:layout_editor_absoluteY="69dp"
             android:maxLength="23"
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Guerrilheiro:"
+            android:hint="@string/guerrilheiro"
             android:inputType="textPersonName"
             android:text=""
             tools:layout_editor_absoluteX="25dp"
@@ -54,17 +54,14 @@
             android:id="@+id/btn_enviar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enviar" />
+            android:text="@string/send" />
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/adView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-1328632532738670/5911855123"></com.google.android.gms.ads.AdView>
-
+            ads:adUnitId="ca-app-pub-1328632532738670/5911855123" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

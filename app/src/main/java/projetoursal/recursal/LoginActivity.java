@@ -16,11 +16,12 @@ import com.google.android.gms.ads.MobileAds;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button questionario;
-    Button fascista;
-    MediaPlayer fascistaMP;
-
-    AdView mAdView;
+    private Button questionario;
+    private Button fascista;
+    private MediaPlayer fascistaMP;
+    private AdView mAdView;
+    private Toast toast;
+    private int duration = Toast.LENGTH_LONG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,6 @@ public class LoginActivity extends AppCompatActivity {
         questionario = findViewById(R.id.btn_questionario);
         fascista = findViewById(R.id.btn_fascista);
 
-
         questionario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,7 +45,6 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
         fascista.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,14 +58,22 @@ public class LoginActivity extends AppCompatActivity {
         fascistaMP.start();
         Context context = getApplicationContext();
         CharSequence text = msg;
-        int duration = Toast.LENGTH_LONG;
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+        if (toast != null)
+            toast.cancel();
+        toast = Toast.makeText(context, text, duration);
+        if (toast != null)
+            toast.show();
         fascistaMP.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             public void onCompletion(MediaPlayer fascistaMP) {
                 fascistaMP.release();
             }
         });
+    }
+
+    protected void onPause() {
+        if (toast != null)
+            toast.cancel();
+        super.onPause();
     }
 
     @Override

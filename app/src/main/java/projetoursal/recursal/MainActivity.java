@@ -20,16 +20,15 @@ import java.util.Random;
 public class MainActivity extends Activity {
 
     private AdView mAdView;
-
-    DataBaseHelper db;
-    MediaPlayer ursalMP;
-    MediaPlayer fascistaMP;
-    Button btnUrsal;
-    Button buttonFascista;
-    Button buttonFascista2;
-    Random r = new Random();
-    Toast toast;
-    int duration = Toast.LENGTH_LONG;
+    private DataBaseHelper db;
+    private MediaPlayer ursalMP;
+    private MediaPlayer fascistaMP;
+    private Button btnUrsal;
+    private Button buttonFascista;
+    private Button buttonFascista2;
+    private Random r = new Random();
+    private Toast toast;
+    private int duration = Toast.LENGTH_LONG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,7 +115,6 @@ public class MainActivity extends Activity {
         }
         if (toast != null)
             toast.cancel();
-
         super.onPause();
     }
 
