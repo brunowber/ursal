@@ -159,21 +159,22 @@ public class CertificadoActivity extends AppCompatActivity {
         Cursor guerrilheiro = db.getUserGuerrilheiro();
         Cursor data = db.getUserData();
 
-        StringBuffer bufferN = getData(name);
-        StringBuffer bufferG = getData(guerrilheiro);
-        StringBuffer bufferD = getData(data);
+        String bufferN = getData(name);
+        String bufferG = getData(guerrilheiro);
+        String bufferD = getData(data);
 
-        xPos = (canvas.getWidth() / 3.1);
+
+        xPos = ((canvas.getWidth() / 2) - bufferN.length()*6);
         yPos = ((canvas.getHeight() / 2.2)) ;
-        canvas.drawText("" + bufferN, (float) xPos, (float) yPos, paint);
+        canvas.drawText(bufferN, (float) xPos, (float) yPos, paint);
 
-        xPos = (canvas.getWidth() / 6);
+        xPos = ((canvas.getWidth() / 3) - bufferG.length()*5);
         yPos = ((canvas.getHeight() / 1.85)) ;
-        canvas.drawText("" + bufferG,(float) xPos, (float) yPos, paint);
+        canvas.drawText(bufferG,(float) xPos, (float) yPos, paint);
 
         xPos = (canvas.getWidth() / 8.4);
         yPos = ((canvas.getHeight() / 1.08)) ;
-        canvas.drawText("" + bufferD, (float) xPos, (float) yPos, paint);
+        canvas.drawText(bufferD, (float) xPos, (float) yPos, paint);
 
         return mutableBitmap;
     }
@@ -198,12 +199,12 @@ public class CertificadoActivity extends AppCompatActivity {
         return file;
     }
 
-    public StringBuffer getData(Cursor data){
+    public String getData(Cursor data){
         StringBuffer buffer = new StringBuffer();
         while (data.moveToNext()) {
             buffer.append(data.getString(0));
         }
-        return buffer;
+        return buffer.toString();
     }
 
     public void startIntent(String pacote, String app, Uri bmpUri){
