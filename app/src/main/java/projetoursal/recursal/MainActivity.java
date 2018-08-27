@@ -94,7 +94,14 @@ public class MainActivity extends Activity {
 
     public void toast(String msg, int som){
         fascistaMP = MediaPlayer.create(this, som);
-        fascistaMP.start();
+        if (fascistaMP != null) {
+            fascistaMP.start();
+            fascistaMP.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                public void onCompletion(MediaPlayer fascistaMP) {
+                    fascistaMP.release();
+                }
+            });
+        }
         Context context = getApplicationContext();
         CharSequence text = msg;
         if (toast != null)
@@ -102,11 +109,6 @@ public class MainActivity extends Activity {
         toast = Toast.makeText(context, text, duration);
         if (toast != null)
             toast.show();
-        fascistaMP.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            public void onCompletion(MediaPlayer fascistaMP) {
-                fascistaMP.release();
-            }
-        });
     }
 
     protected void onPause() {
