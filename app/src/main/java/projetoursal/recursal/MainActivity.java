@@ -28,6 +28,8 @@ public class MainActivity extends Activity {
     Button buttonFascista;
     Button buttonFascista2;
     Random r = new Random();
+    Toast toast;
+    int duration = Toast.LENGTH_LONG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,18 +45,17 @@ public class MainActivity extends Activity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
-
         db = new DataBaseHelper(this);
-
-
-        ursalMP = MediaPlayer.create(this, R.raw.hino);
-        ursalMP.start();
 
         Cursor cursor = db.getAllData();
         if (cursor != null && (cursor.getCount() > 0)){
             Intent i = new Intent(getBaseContext(), CertificadoActivity.class);
             startActivity(i);
         }
+
+        ursalMP = MediaPlayer.create(this, R.raw.hino);
+        ursalMP.start();
+
         btnUrsal = findViewById(R.id.button_ursal);
         buttonFascista = findViewById(R.id.botao_capital);
         buttonFascista2 = findViewById(R.id.botao_mudo);
@@ -97,9 +98,11 @@ public class MainActivity extends Activity {
         fascistaMP.start();
         Context context = getApplicationContext();
         CharSequence text = msg;
-        int duration = Toast.LENGTH_LONG;
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+        if (toast != null)
+            toast.cancel();
+        toast = Toast.makeText(context, text, duration);
+        if (toast != null)
+            toast.show();
         fascistaMP.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             public void onCompletion(MediaPlayer fascistaMP) {
                 fascistaMP.release();
@@ -111,6 +114,9 @@ public class MainActivity extends Activity {
         if (ursalMP.isPlaying()) {
             ursalMP.pause();
         }
+        if (toast != null)
+            toast.cancel();
+
         super.onPause();
     }
 
